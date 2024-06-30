@@ -130,6 +130,7 @@ main {
     margin-top: 0;
     margin-bottom: 1rem;
     font-family: var(--default-font);
+    line-height: 1.5;
 }
 #main-cta-wrap div:last-of-type{
     width: 25%;
