@@ -1,0 +1,122 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 32px;
+    background: #023b6d;
+}
+#header-logo {
+    padding-left: 10px;
+}
+#header-logo > div {
+    display: flex;
+    height: 25px;
+    width: 178.055px;
+    background-image: url(https://bootstrapmade.com/assets/img/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#header-device{
+    width: 116px;
+    height: 35.5px;
+    margin-top: 2px;
+}
+#header-device > ul {
+    margin: 0 0 0 20px;
+    padding: 0;
+    list-style: none;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+#header-device li i{
+    display: flex;
+    padding: 5px 5px;
+    width: 22px;
+    height: 22px;
+    color: rgba(255, 255, 255, 0.5);
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+#header-device li i:hover, #header-navigate a i:hover, #header-redirect i:hover{
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+#header-navigate{
+    margin: auto;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 24px;
+}
+#header-navigate a:nth-of-type(1), #header-navigate a:nth-of-type(3){
+    display: flex;
+    padding: 5px 5px;
+    width: 14px;
+    height: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+#header-navigate a:nth-of-type(2){
+    display: flex;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    width: 45.5px;
+    margin: -2px 10px 0 10px;
+}
+#header-redirect{
+    display: flex;
+    padding: 5px 5px;
+    width: 12px;
+    height: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+#header-download{
+    background: #00a6eb;
+    color: #fff;
+    font-size: 13px;
+    padding: 0 16px;
+    height: 32px;
+    font-weight: 700;
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header-download i{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+#header-download span{
+    padding-left: 6px;
+}
+.blind{
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
