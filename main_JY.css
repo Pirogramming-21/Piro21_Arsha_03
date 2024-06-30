@@ -89,45 +89,23 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-   width: 960px;
-   margin: 0 12px;
+   margin: 0 76px;
    padding: 0 12px;
+   max-width: 100%;
 }
-
+.questions__content ul {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   width: 1088px;
+}
 .questions__content li {
    display: flex;
    flex-direction: column;
-   width: 736px;
+   width: 100%;
    padding: 20px;
    background-color: white;
    margin-bottom: 20px;
-}
-.questions__quest > .top {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-}
-.questions__quest > .top > .bi-question-circle {
-   display: flex;
-   align-items: center;
-   gap: 10px;
-   color: var(--accent-color);
-   font-size: 20px;
-}
-.bi-question-circle > p {
-   font-weight: bold;
-   font-size: 18px;
-   color: var(--heading-color);
-}
-.questions__quest > .top > .bi-chevron-right {
-   font-size: 16px;
-   color: var(--default-color);
-}
-.questions__quest > .questions__quest__content {
-   text-align: left;
-   padding-top: 10px;
-   font-size: 16px;
-   color: var(--default-color);
 }
 
 .contact__container {
