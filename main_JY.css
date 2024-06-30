@@ -1,13 +1,10 @@
-.Testimonials {
-   background-color: white;
+.testimonials__container {
    width: 100%;
    padding: 60px 0;
-   text-align: center;
-}
-.testimonials__container {
    display: flex;
    flex-direction: column;
    align-items: center;
+   text-align: center;
 }
 
 .testimonials__per {
@@ -66,15 +63,69 @@
 }
 
 .testimonials__bar {
-   margin: 20px;
+   margin: 20px 0 0;
    display: flex;
    justify-content: center;
    gap: 8px;
 }
-
 .testimonials__bar > div {
    width: 12px;
    height: 12px;
    background-color: color-mix(in srgb, var(--default-color), transparent 85%);
    border-radius: 50%;
+}
+
+.questions__container {
+   background-color: var(--background-color);
+   width: 100%;
+   padding: 60px 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+}
+
+.questions__content {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 960px;
+   margin: 0 12px;
+   padding: 0 12px;
+}
+
+.questions__content li {
+   display: flex;
+   flex-direction: column;
+   width: 736px;
+   padding: 20px;
+   background-color: white;
+   margin-bottom: 20px;
+}
+.questions__quest > .top {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.questions__quest > .top > .bi-question-circle {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   color: var(--accent-color);
+   font-size: 20px;
+}
+.bi-question-circle > p {
+   font-weight: bold;
+   font-size: 18px;
+   color: var(--heading-color);
+}
+.questions__quest > .top > .bi-chevron-right {
+   font-size: 16px;
+   color: var(--default-color);
+}
+.questions__quest > .questions__quest__content {
+   text-align: left;
+   padding-top: 10px;
+   font-size: 16px;
+   color: var(--default-color);
 }
