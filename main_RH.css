@@ -9,8 +9,18 @@ section, .section {
     box-sizing: border-box;
 }
 
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+    .main__title {
+        max-width: 1140px;
+    }
+}
+
 .container {
     width: 100%;
+    max-width: 1140px;
     padding-right: 0.75rem;
     padding-left: 0.75rem;
     margin-left: auto;
@@ -194,4 +204,199 @@ section, .section {
     text-transform: none;
     line-height: 1;
     vertical-align: -0.125em;
+}
+
+/* ----------------- pricing section ----------------- */
+.pricing_section {
+    color: var(--default-color);
+    background-color: #f5f6f8;
+    padding: 60px 0px;
+    /*scroll-margin-top*/
+}
+
+.pricing_card_of_3 {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1*var(--bs-gutter-y));
+    margin-right: calc(-0.5*var(--bs-gutter-x));
+    margin-left: calc(-0.5*var(--bs-gutter-x));
+}
+
+@media screen and (min-width: 992px) {
+    pricing_card {
+        flex: 0 0 auto;
+        width: 33.333333%;
+    }
+}
+
+.pricing_card {
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x)*0.5);
+    padding-left: calc(var(--bs-gutter-x)*0.5);
+    margin-top: var(--bs-gutter-y);
+}
+
+.pricing_card_content {
+    background-color: #ffffff;
+    box-shadow: 0 3px 20px -2px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #f5f6f8;
+    padding: 60px 40px;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.pricing_card_content h3 {
+    font-weight: 600;
+    margin-top: 0;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: var(--heading-color);
+    /*font-family 해야됨*/
+}
+
+.pricing_card_content h4 {
+    color: var(--accent-color);
+    font-size: 48px;
+    font-weight: 400;
+    /*font-family 해야됨*/
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 1.2;
+}
+
+.pricing_card_content h4 sup {
+    top: -0.5em;
+    font-size: 28px;
+    position: relative;
+    line-height: 0;
+    vertical-align: baseline;
+}
+
+.pricing_card_content h4 span {
+    color: lightgray;
+    font-size: 18px;
+}
+
+.pricing_card_content ul {
+    padding: 20px 0;
+    list-style: none;
+    color: gray;
+    text-align: left;
+    line-height: 20px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.pricing_card_content ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.pricing_card_content ul li i {
+    color: #059652;
+    font-size: 24px;
+    padding-right: 3px;
+}
+
+.bi-check::before {
+    content: '\f26e';
+}
+
+/*.bi::before {
+    display: inline-block;
+    font-family: bootstrap-icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: -.125em;
+}*/
+
+.pricing_card_content ul .na {
+    color: gray;
+}
+
+.pricing_card_content ul .na i {
+    color: gray;
+    font-size: 24px;
+    padding-right: 3px;
+}
+
+.bi-x::before {
+    content: '\f62a';
+}
+
+.pricing_card_content ul .na span {
+    text-decoration: line-through;
+}
+
+/*버튼*/
+
+.pricing_card_content_featured {
+    background-color: #ffffff;
+    box-shadow: 0 3px 20px -2px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid var(--accent-color);
+    padding: 60px 40px;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.pricing_card_content_featured h3 {
+    font-weight: 600;
+    margin-top: 0;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: var(--heading-color);
+    /*font-family 해야됨*/
+}
+
+.pricing_card_content_featured h4 {
+    color: var(--accent-color);
+    font-size: 48px;
+    font-weight: 400;
+    /*font-family 해야됨*/
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 1.2;
+}
+
+.pricing_card_content_featured h4 sup {
+    top: -0.5em;
+    font-size: 28px;
+    position: relative;
+    line-height: 0;
+    vertical-align: baseline;
+}
+
+.pricing_card_content_featured h4 span {
+    color: lightgray;
+    font-size: 18px;
+}
+
+.pricing_card_content_featured ul {
+    padding: 20px 0;
+    list-style: none;
+    color: gray;
+    text-align: left;
+    line-height: 20px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.pricing_card_content_featured ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.pricing_card_content_featured ul li i {
+    color: #059652;
+    font-size: 24px;
+    padding-right: 3px;
 }
