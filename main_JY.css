@@ -13,11 +13,19 @@
 }
 
 .testimonials__intro {
+   overflow: hidden;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.testimonials__intro__slider {
    display: flex;
    flex-direction: column;
    align-items: center;
+   animation: slider 10s infinite linear;
+   width: 100%;
 }
-.testimonials__intro > img {
+.testimonials__intro__slider > img {
    width: 120px;
    height: 120px;
    border-radius: 50%;
@@ -62,6 +70,43 @@
    font-style: italic;
 }
 
+/* .testimonials__intro__slider:nth-child(1) {
+   animation-delay: 0;
+}
+.testimonials__intro__slider:nth-child(2) {
+   animation-delay: -2.5s;
+}
+.testimonials__intro__slider:nth-child(3) {
+   animation-delay: -5s;
+}
+.testimonials__intro__slider:nth-child(4) {
+   animation-delay: -7.5s;
+}
+.testimonials__intro__slider:nth-child(5) {
+   animation-delay: -10s;
+}
+@keyframes slider {
+   0% {
+     transform: translateX(0);
+   }
+ 
+   26% {
+     transform: translateX(0);
+   }
+   33% {
+     transform: translateX(-100%);
+     animation-timing-function: step-end;
+   }
+   93% {
+     transform: translateX(100%);
+   }
+ 
+   100% {
+     transform: translateX(0);
+   }
+ } */
+
+
 .testimonials__bar {
    margin: 20px 0 0;
    display: flex;
@@ -78,6 +123,7 @@
 .questions__container {
    background-color: var(--background-color);
    width: 100%;
+   height: 100%;
    padding: 60px 0;
    display: flex;
    flex-direction: column;
@@ -91,7 +137,6 @@
    align-items: center;
    margin: 0 76px;
    padding: 0 12px;
-   max-width: 100%;
 }
 .questions__content ul {
    display: flex;
@@ -109,19 +154,21 @@
 }
 
 .contact__container {
-   width: 100%;
+   /* width: 100%; */
    padding: 60px 0;
    display: flex;
    flex-direction: column;
    align-items: center;
+   /* justify-content: space-between; */
    text-align: center;
 }
 
 .contact__content {
    display: flex;
    padding: 0 12px;
+   margin: 0 76px;
    margin-top: 24px;
-   gap: 24px;
+   gap: 12px;
 }
 .contact__content > div {
    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
@@ -132,6 +179,7 @@
 
 .contact__info {
    width: min(100%, 526px);
+   padding-left: 12px;
 }
 .contact__info > div {
    display: flex;
@@ -164,35 +212,60 @@
    font-size: 14px;
    color: var(--default-color);
 }
+.contact__info .map {
+   height: 100%;
+   height: 270px;
+}
+.contact__info .map iframe {
+   width: 100%;
+   border: 0;
+}
 
+.contact__per {
+   padding-left: 12px;
+}
 .contact__per__container {
    display: flex;
    justify-content: center;
    flex-wrap: wrap;
-   gap: 24px;
-   width: min(100%, 746px);
+   margin: -24px -12px;
 }
-.contact__per__name, .contact__per__email {
-   width: min(100%, 331px);
+@media (min-width: 992px) {
+   .contact__info {
+       flex: 0 0 auto;
+       width: 41.66666667%;
+   }
+   .contact__per {
+      flex: 0 0 auto;
+      width: 58.33333333%;
+  }
 }
-.contact__per__subject, .contact__per__message {
-   width: min(100%, 686px);
+@media (min-width: 768px) {
+   .contact__per__name, .contact__per__email {
+      flex: 0 0 auto;
+      width: 50%;
+   }
+   .contact__per__subject, .contact__per__message {
+      flex: 0 0 auto;
+      width: 100%;
+  }
 }
-.contact__per__message input {
-   height: 232px;
-}
+
 .contact__per__container > div {
    display: flex;
    flex-direction: column;
-   padding: 0 12px;
+   padding-left: 12px;
    text-align: left;
+   margin-top: 24px;
 }
 .contact__per__container > div p {
    font-size: 16px;
    padding-bottom: 8px;
+   color: var(--default-color);
 }
-.contact__per__container > div input {
+.contact__per__container > div input, #message__field {
    padding: 10px 15px;
+   font-size: 14px;
    box-shadow: none;
    border-radius: 0;
    color: var(--default-color);
