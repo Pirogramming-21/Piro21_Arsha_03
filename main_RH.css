@@ -18,6 +18,30 @@ section, .section {
     }
 }
 
+@media screen and (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
 .container {
     width: 100%;
     max-width: 1140px;
@@ -225,7 +249,7 @@ section, .section {
 }
 
 @media screen and (min-width: 992px) {
-    pricing_card {
+    .pricing_card {
         flex: 0 0 auto;
         width: 33.333333%;
     }
@@ -400,3 +424,108 @@ section, .section {
     font-size: 24px;
     padding-right: 3px;
 }
+/* 버튼 추가할 자리*/
+
+/* ----------------- pricing section ----------------- */
+
+.services_section {
+    color: var(--default-color);
+    background-color: #f5f6f8;
+    padding: 60px 0px;
+    /*scroll-margin-top*/
+}
+
+.services_card_of_4 {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1*var(--bs-gutter-y));
+    margin-right: calc(-0.5*var(--bs-gutter-x));
+    margin-left: calc(-0.5*var(--bs-gutter-x));
+}
+
+.services_card {
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x)*0.5);
+    padding-left: calc(var(--bs-gutter-x)*0.5);
+    margin-top: var(--bs-gutter-y);
+}
+
+@media screen and (min-width: 768px) {
+    .services_card {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+
+.services_card_content {
+    background-color: #ffffff;
+    box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
+    padding: 50px 30px;
+    transition: all ease-in-out 0.4s;
+    height: 100%;
+    position: relative;
+}
+
+.services_card_content .icon {
+    margin-bottom: 10px;
+}
+
+.services_card_content .icon i {
+    color: var(--accent-color);
+    font-size: 36px;
+    transition: 0.3s;
+}
+
+.bi-activity::before {
+    content: '\f66b';
+}
+
+.services_card_content h4 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: var(--heading-color);
+    /*font-family 추가해야 됨*/
+    margin-top: 0;
+    line-height: 1.2;
+}
+
+.services_card_content h4 a {
+    color: var(--heading-color);
+    transition: ease-in-out 0.3s;
+    text-decoration: none;
+}
+
+.stretched-link::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    content: "";
+}
+
+.services_card_content p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
