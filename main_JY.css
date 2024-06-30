@@ -2,9 +2,79 @@
    background-color: white;
    width: 100%;
    padding: 60px 0;
+   text-align: center;
+}
+.testimonials__container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 .testimonials__per {
    margin: 0 57px;
-   padding: 0 12px;
+   padding: 0 12px
+}
+
+.testimonials__intro {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.testimonials__intro > img {
+   width: 120px;
+   height: 120px;
+   border-radius: 50%;
+   object-fit: cover;
+   border: 4px;
+}
+
+.testimonials__name {
+   font-size: 20px;
+   font-weight: bold;
+   margin: 10px 0 5px 0;
+   color: var(--heading-color);
+}
+
+.testimonials__position {
+   color: color-mix(in srgb, var(--default-color), transparent 40%);
+   font-size: 14px;
+   padding: 0 0 15px;
+}
+
+.star {
+   color: #ffc107;
+   margin: 0 0 15px; 
+}
+
+.testimonials__sent {
+   display: block;
+   padding: 0 93px 15px 93px;
+   top: 90px;
+}
+.testimonials__sent > i {
+   font-size: 26px;
+   color: color-mix(in srgb, var(--accent-color), transparent 50%);
+}
+.testimonials__sent > .quote-icon-right {
+   display: inline-block;
+   transform: rotateY(180deg);
+}
+.testimonials__sent > span {
+   font-size: 16px;
+   color: var(--default-color);
+   font-style: italic;
+}
+
+.testimonials__bar {
+   margin: 20px;
+   display: flex;
+   justify-content: center;
+   gap: 8px;
+}
+
+.testimonials__bar > div {
+   width: 12px;
+   height: 12px;
+   background-color: color-mix(in srgb, var(--default-color), transparent 85%);
+   border-radius: 50%;
 }
