@@ -1,0 +1,96 @@
+/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+:root { 
+    --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+    --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
+    --heading-color: #37517e; /* Color for headings, subheadings and title throughout the website */
+    --accent-color: #47b2e4; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+    --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+    --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  
+  }
+  
+  /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+  :root {
+    --nav-color: #ffffff;  /* The default color of the main navmenu links */
+    --nav-hover-color: #47b2e4; /* Applied to main navmenu links when they are hovered over or active */
+    --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
+    --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+    --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
+    --nav-dropdown-hover-color: #47b2e4; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  }
+
+  /* 폰트 */
+  :root{
+    --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Jost", sans-serif;
+    --nav-font: "Poppins", sans-serif;
+  }
+
+
+  ::after, ::before {
+    box-sizing: border-box;
+  }
+
+  div {
+    display: block;
+  }
+
+/* 이 부분부터 공통 1번 */
+  .main__title {
+    width: 100%;
+    margin:  0px 78px;
+    padding: 0px 12px 60px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: relative;
+}
+
+.main__title h2 {
+  display: block;
+  margin: 0 0 20px;
+  margin-top: 0;
+  padding: 0 0 20px;
+  font-size: 32px;
+  font-weight: 700px;
+  position: relative;
+  color: var(--heading-color);
+  /*font-family 아직 없음*/
+}
+
+.main__title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 160px;
+  height: 1px;
+  background: gray;
+  left: 0;
+  right: 0;
+  bottom: 1px;
+  margin: auto;
+}
+
+.main__title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--accent-color);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.main__title p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/*  End 공통 부분 1번 */
+/* 1번 구조 설명*/
+/* main__title 안에 <h2> 태그로 제목 (ex. Team, About us) 이 있고 
+Team 밑의 긴 선이 after와 before로 구현되어 있음, 
+또한 p 태그는 본인 파트 디자인에 맞게 포함/미포함 해서 사용하시길 !*/
