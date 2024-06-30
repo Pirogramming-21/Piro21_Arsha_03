@@ -39,21 +39,23 @@
    padding-bottom: 12px;
    color: var(--heading-color);
 }
-.footer__bottom__L__menu li, .footer__bottom__S__menu li {
+.footer__bottom__LandS__menu li {
    padding: 10px 0;
    display: flex;
    align-items: center;
 }
-.footer__bottom__L__menu i, .footer__bottom__S__menu i {
+.footer__bottom__LandS__menu i {
    font-size: 12px;
    padding-right: 3px;
    color: var(--accent-color);
 }
-.footer__bottom__L__menu span, .footer__bottom__S__menu span {
+.footer__bottom__LandS__menu span {
    color: var(--default-color);
 }
-.footer__bottom__L__menu li:nth-of-type(4) span {
+
+.footer__bottom__LandS__menu span:hover {
    color: var(--accent-color);
+   cursor: pointer;
 }
 
 .footer__bottom__follow h4 {
@@ -79,6 +81,12 @@
    height: 40px;
    font-size: 16px;
    color: var(--default-color);
+}
+
+.footer__bottom__follow__img div:hover {
+   border-color: var(--accent-color);
+   color: var(--accent-color);
+   cursor: pointer;
 }
 
 .footer__bottom__copyright {
