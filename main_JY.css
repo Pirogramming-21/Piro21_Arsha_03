@@ -1,0 +1,10 @@
+.Testimonials {
+   background-color: white;
+   width: 100%;
+   padding: 60px 0;
+}
+
+.testimonials__per {
+   margin: 0 57px;
+   padding: 0 12px;
+}
