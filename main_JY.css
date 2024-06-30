@@ -129,3 +129,95 @@
    font-size: 16px;
    color: var(--default-color);
 }
+
+.contact__container {
+   width: 100%;
+   padding: 60px 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+}
+
+.contact__content {
+   display: flex;
+   padding: 0 12px;
+   margin-top: 24px;
+   gap: 24px;
+}
+.contact__content > div {
+   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+   padding: 30px;
+   border-top: 3px solid var(--accent-color);
+   border-bottom: 3px solid var(--accent-color);
+}
+
+.contact__info {
+   width: min(100%, 526px);
+}
+.contact__info > div {
+   display: flex;
+   align-items: center;
+   margin-bottom: 40px;
+}
+.contact__info > div > i {
+   margin-right: 15px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: color-mix(in srgb, var(--accent-color), transparent 92%);
+   border-radius: 50%;
+   font-size: 20px;
+   width: 44px;
+   height: 44px;
+   color: var(--accent-color);
+}
+
+.contact__info .info {
+   text-align: left;
+}
+.contact__info h3 {
+   margin-bottom: 5px;
+   font-weight: 700;
+   font-size: 18px;
+   color: var(--heading-color);
+}
+.contact__info p {
+   font-size: 14px;
+   color: var(--default-color);
+}
+
+.contact__per__container {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 24px;
+   width: min(100%, 746px);
+}
+.contact__per__name, .contact__per__email {
+   width: min(100%, 331px);
+}
+.contact__per__subject, .contact__per__message {
+   width: min(100%, 686px);
+}
+.contact__per__message input {
+   height: 232px;
+}
+.contact__per__container > div {
+   display: flex;
+   flex-direction: column;
+   padding: 0 12px;
+   text-align: left;
+}
+.contact__per__container > div p {
+   font-size: 16px;
+   padding-bottom: 8px;
+}
+.contact__per__container > div input {
+   padding: 10px 15px;
+   box-shadow: none;
+   border-radius: 0;
+   color: var(--default-color);
+   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+   border-width: 1px;
+}
