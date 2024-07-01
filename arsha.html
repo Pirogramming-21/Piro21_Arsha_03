@@ -4,6 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -12,15 +13,51 @@
    <link rel="stylesheet" href="./variable.css">
    <link rel="stylesheet" href="./header.css">
    <link rel="stylesheet" href="./main.css">
-   <link rel="stylesheet" href="./main_RH.css">
-   <link rel="stylesheet" href="./footer.css">
-   <link rel="stylesheet" href="./mobile.css">
    <link rel="stylesheet" href="./main_JY.css">
    <link rel="stylesheet" href="./main_RH.css">
+   <link rel="stylesheet" href="./main_sh.css">
+   <link rel="stylesheet" href="./footer.css">
+   <link rel="stylesheet" href="./mobile.css">
    <title>Arsha</title>
 </head>
 <body>
-   <header></header>
+   <header>
+      <div id="header-logo">
+         <div></div>
+      </div>
+      <div id="header-device">
+         <ul>
+            <li>
+               <i class="bi bi-display"></i>
+            </li>
+            <li>
+               <i class="bi bi-tablet"></i>
+            </li>
+            <li>
+               <i class="bi bi-phone"></i>
+            </li>
+          </ul>
+      </div>
+      <div id="header-navigate">
+         <a href="#">
+            <i class="bi bi-chevron-left"></i>
+         </a>
+         <a href="#">Arsha</a>
+         <a href="#">
+            <i class="bi bi-chevron-right"></i>
+         </a>
+      </div>
+      <a id="header-redirect">
+         <i class="bi bi-box-arrow-up-right"></i>
+      </a>
+      <a id="header-download">
+         <div>
+            <i class="bi bi-download"></i>
+         </div>
+         <span>FREE DOWNLOAD</span>
+      </a>
+
+   </header>
    <main>
       <!-- 의진 -->
       <div></div>
@@ -28,9 +65,293 @@
       <div></div>
       <div></div>
       <!-- 시환 -->
-      <div></div>
-      <div></div>
-      <div></div>
+      <section id="main5">
+         <div id="main5-wrap">
+            <div id="main5-left">
+               <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/skills.png">
+            </div>
+            <div id="main5-right">
+               <p> Voluptatem dignissimos provident quasi corporis voluptas
+               </p>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+               </p>
+               <div>
+                  <div class="skills-graph">
+                     <span>
+                        <div>HTML</div>
+                        <div>100%</div>
+                     </span>
+                     <div class="progress-bar-wrap">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                     </div>
+                  </div>
+                  <div class="skills-graph">
+                     <span>
+                        <div>CSS</div>
+                        <div>90%</div>
+                     </span>
+                     <div class="progress-bar-wrap">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+                     </div>
+                  </div>
+                  <div class="skills-graph">
+                     <span>
+                        <div>JAVASCRIPT</div>
+                        <div>75%</div>
+                     </span>
+                     <div class="progress-bar-wrap">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+                     </div>
+                  </div>
+                  <div class="skills-graph">
+                     <span>
+                        <div>PHOTOSHOP</div>
+                        <div>55%</div>
+                     </span>
+                     <div class="progress-bar-wrap">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 55%;"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--main6 파트 이전-->
+      <!-- services section -->
+      <section id="services" class="services_section">
+         <div class="main__title">
+            <h2>SERVICES</h2>
+            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+         </div>
+         <div class="container">
+            <div class="services_card_of_4">
+               <!-- 좌상향 -->
+               <div class="services_card">
+                  <div class="services_card_content">
+                     <div class="icon">
+                        <i class="bi bi-activity icon"></i>
+                     </div>
+                     <h4>
+                        <a href class="stretched-link">Lorem Ipsum</a>
+                     </h4>
+                     <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                  </div>
+               </div>
+               <!-- 우상향 -->
+               <div class="services_card">
+                  <div class="services_card_content">
+                     <div class="icon">
+                        <i class="bi bi-bounding-box-circles icon"></i>
+                     </div>
+                     <h4>
+                        <a href class="stretched-link">Sed ut perspici</a>
+                     </h4>
+                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                  </div>
+               </div>
+               <!-- 좌하향 -->
+               <div class="services_card">
+                  <div class="services_card_content">
+                     <div class="icon">
+                        <i class="bi bi-calendar4-week icon"></i>
+                     </div>
+                     <h4>
+                        <a href class="stretched-link">Magni Dolores</a>
+                     </h4>
+                     <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                  </div>
+               </div>
+               <!-- 우하향 -->
+               <div class="services_card">
+                  <div class="services_card_content">
+                     <div class="icon">
+                        <i class="bi bi-broadcast icon"></i>
+                     </div>
+                     <h4>
+                        <a href class="stretched-link">Nemo Enim</a>
+                     </h4>
+                     <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+       </section>
+      <!--main7-->
+      <section id="main-cta">
+         <div id="main-cta-overlay"></div>
+         <div id="main-cta-wrap">
+            <div id="cta-content">
+               <p>Call To Action
+               </p>
+               <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+               </p>
+            </div>
+            <div>
+               <a href="#" id="cta-button">Call To Action</a>
+            </div>
+         </div>
+      </section>
+      <section id="main-portfolio">
+         <div id="main-portfolio-top">
+            <div class="main__title">
+               <h2>portfolio</h2>
+            </div>
+            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+            </p>
+         </div>
+
+         <div id="main-portfolio-bottom">
+            <ul id="portfolio-filter">
+               <li>All</li>
+               <li>App</li>
+               <li>Card</li>
+               <li>Web</li>
+            </ul>
+
+            <div id="portfolio-album">
+               <div class="portfolio-card card1 img-column1 card-app">
+                  <div class="portfolio-img">
+                     <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-1.jpg">
+                  </div>
+                  <div class="portfolio-info">
+                     <h4>App 1</h4>
+                     <p>Lorem ipsum, dolor sit</p>
+                     <a class="portfolio-zoom">
+                        <i class="bi bi-zoom-in"></i>
+                     </a>
+                     <a class="portfolio-link">
+                        <i class="bi bi-link-45deg"></i>
+                     </a>
+                  </div>
+               </div>
+               <div class="portfolio-card card2 img-column2 card-product">
+                  <div class="portfolio-img">
+                     <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-2.jpg">
+                  </div>
+                  <div class="portfolio-info">
+                     <h4>Product 1</h4>
+                     <p>Lorem ipsum, dolor sit</p>
+                     <a class="portfolio-zoom">
+                        <i class="bi bi-zoom-in"></i>
+                     </a>
+                     <a class="portfolio-link">
+                        <i class="bi bi-link-45deg"></i>
+                     </a>
+                  </div>
+               </div>
+               <div class="portfolio-card card3 img-column3 card-branding">
+                  <div class="portfolio-img">
+                     <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-3.jpg">
+                  </div>
+                  <div class="portfolio-info">
+                     <h4>Branding 1</h4>
+                     <p>Lorem ipsum, dolor sit</p>
+                     <a class="portfolio-zoom">
+                        <i class="bi bi-zoom-in"></i>
+                     </a>
+                     <a class="portfolio-link">
+                        <i class="bi bi-link-45deg"></i>
+                     </a>
+                  </div>
+               </div>
+               <div class="portfolio-card card4 img-column3 card-app">
+                  <div class="portfolio-img">
+                     <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-4.jpg">
+                  </div>
+                  <div class="portfolio-info">
+                     <h4>App 2</h4>
+                     <p>Lorem ipsum, dolor sit</p>
+                     <a class="portfolio-zoom">
+                        <i class="bi bi-zoom-in"></i>
+                     </a>
+                     <a class="portfolio-link">
+                        <i class="bi bi-link-45deg"></i>
+                     </a>
+                  </div>
+               </div>
+               <div class="portfolio-card card5 img-column2 card-product">
+                  <div class="portfolio-img">
+                     <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-5.jpg">
+                  </div>
+                  <div class="portfolio-info">
+                     <h4>Product 2</h4>
+                     <p>Lorem ipsum, dolor sit</p>
+                     <a class="portfolio-zoom">
+                        <i class="bi bi-zoom-in"></i>
+                     </a>
+                     <a class="portfolio-link">
+                        <i class="bi bi-link-45deg"></i>
+                     </a>
+                  </div>
+               </div>
+               <div class="portfolio-card card6 img-column1 card-branding">
+                  <div class="portfolio-img">
+                     <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-6.jpg">
+                  </div>
+                  <div class="portfolio-info">
+                     <h4>Branding 2</h4>
+                     <p>Lorem ipsum, dolor sit</p>
+                     <a class="portfolio-zoom">
+                        <i class="bi bi-zoom-in"></i>
+                     </a>
+                     <a class="portfolio-link">
+                        <i class="bi bi-link-45deg"></i>
+                     </a>
+                  </div>
+               </div>
+               <div class="portfolio-card card7 img-column3 card-app">
+                  <div class="portfolio-img">
+                     <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-7.jpg">
+                  </div>
+                  <div class="portfolio-info">
+                     <h4>App 3</h4>
+                     <p>Lorem ipsum, dolor sit</p>
+                     <a class="portfolio-zoom">
+                        <i class="bi bi-zoom-in"></i>
+                     </a>
+                     <a class="portfolio-link">
+                        <i class="bi bi-link-45deg"></i>
+                     </a>
+                  </div>
+               </div>
+               <div class="portfolio-card card8 img-column3 card-product">
+                  <div class="portfolio-img">
+                     <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-8.jpg">
+                  </div>
+                  <div class="portfolio-info">
+                     <h4>Product 3</h4>
+                     <p>Lorem ipsum, dolor sit</p>
+                     <a class="portfolio-zoom">
+                        <i class="bi bi-zoom-in"></i>
+                     </a>
+                     <a class="portfolio-link">
+                        <i class="bi bi-link-45deg"></i>
+                     </a>
+                  </div>
+               </div>
+               <div class="portfolio-card card9 img-column2 card-branding">
+                  <div class="portfolio-img">
+                     <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-9.jpg">
+                  </div>
+                  <div class="portfolio-info">
+                     <h4>Branding 3</h4>
+                     <p>Lorem ipsum, dolor sit</p>
+                     <a class="portfolio-zoom">
+                        <i class="bi bi-zoom-in"></i>
+                     </a>
+                     <a class="portfolio-link">
+                        <i class="bi bi-link-45deg"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+
+
+         </div>
+         
+
+
+      </section>
       <!-- 라현 -->
       <!-- team section -->
       <section id="team" class="team_section">
@@ -262,65 +583,7 @@
          </div>
       </section>
       <!-- End pricing section -->
-      <!-- services section -->
-       <section id="services" class="services_section">
-         <div class="main__title">
-            <h2>SERVICES</h2>
-            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-         </div>
-         <div class="container">
-            <div class="services_card_of_4">
-               <!-- 좌상향 -->
-               <div class="services_card">
-                  <div class="services_card_content">
-                     <div class="icon">
-                        <i class="bi bi-activity icon"></i>
-                     </div>
-                     <h4>
-                        <a href class="stretched-link">Lorem Ipsum</a>
-                     </h4>
-                     <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-                  </div>
-               </div>
-               <!-- 우상향 -->
-               <div class="services_card">
-                  <div class="services_card_content">
-                     <div class="icon">
-                        <i class="bi bi-bounding-box-circles icon"></i>
-                     </div>
-                     <h4>
-                        <a href class="stretched-link">Sed ut perspici</a>
-                     </h4>
-                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-                  </div>
-               </div>
-               <!-- 좌하향 -->
-               <div class="services_card">
-                  <div class="services_card_content">
-                     <div class="icon">
-                        <i class="bi bi-calendar4-week icon"></i>
-                     </div>
-                     <h4>
-                        <a href class="stretched-link">Magni Dolores</a>
-                     </h4>
-                     <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-                  </div>
-               </div>
-               <!-- 우하향 -->
-               <div class="services_card">
-                  <div class="services_card_content">
-                     <div class="icon">
-                        <i class="bi bi-broadcast icon"></i>
-                     </div>
-                     <h4>
-                        <a href class="stretched-link">Nemo Enim</a>
-                     </h4>
-                     <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-       </section>
+      
       <!-- End 라현 -->
       <!-- 지요 -->
       <div class="Testimonials">
