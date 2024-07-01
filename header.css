@@ -1,4 +1,4 @@
-header {
+top-header {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,10 +10,10 @@ header {
     height: 32px;
     background: #023b6d;
 }
-#header-logo {
+#top-header-logo {
     padding-left: 10px;
 }
-#header-logo > div {
+#top-header-logo > div {
     display: flex;
     height: 25px;
     width: 178.055px;
@@ -21,12 +21,17 @@ header {
     background-size: contain;
     background-repeat: no-repeat;
 }
-#header-device{
+@media (max-width: 768px) {
+    #top-header-logo {
+        display: none;
+    }
+}
+#top-header-device{
     width: 116px;
     height: 35.5px;
     margin-top: 2px;
 }
-#header-device > ul {
+#top-header-device > ul {
     margin: 0 0 0 20px;
     padding: 0;
     list-style: none;
@@ -34,14 +39,14 @@ header {
     display: flex;
     align-items: center;
 }
-#header-device li{
+#top-header-device li{
     width: 32px;
     height: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#header-device li i{
+#top-header-device li i{
     display: flex;
     padding: 5px 5px;
     width: 22px;
@@ -51,12 +56,23 @@ header {
     align-items: center;
     transition: 0.3s;
 }
-#header-device li i:hover, #header-navigate a i:hover, #header-redirect i:hover{
+#top-header-device i.bi.bi-display {
+    color: white;
+}
+#top-header-device li i:hover, #top-header-navigate a i:hover, #top-header-redirect i:hover{
     cursor: pointer;
     color: white;
     transition: 0.3s;
 }
-#header-navigate{
+@media (max-width: 1024px) {
+    #top-header-device {
+        display: none;
+    }
+}
+#top-header-navigate{
+    margin-right: auto;
+}
+#top-header-navigate{
     margin: auto;
     padding-left: 0;
     display: flex;
@@ -64,7 +80,13 @@ header {
     text-align: center;
     height: 24px;
 }
-#header-navigate a:nth-of-type(1), #header-navigate a:nth-of-type(3){
+@media (min-width: 768px) {
+    #top-header-navigate {
+        padding-left: 0;
+        margin-left: auto;
+    }
+}
+#top-header-navigate a:nth-of-type(1), #top-header-navigate a:nth-of-type(3){
     display: flex;
     width: 24px;
     height: 24px;
@@ -72,7 +94,7 @@ header {
     justify-content: center;
     align-items: center;
 }
-#header-navigate a:nth-of-type(2){
+#top-header-navigate a:nth-of-type(2){
     display: flex;
     text-decoration: none;
     font-size: 16px;
@@ -83,7 +105,7 @@ header {
     width: 45.5px;
     margin: -2px 10px 0 10px;
 }
-#header-redirect{
+#top-header-redirect{
     display: flex;
     padding: 5px 5px;
     width: 12px;
@@ -92,7 +114,7 @@ header {
     justify-content: center;
     align-items: center;
 }
-#header-download{
+#top-header-download{
     background: #00a6eb;
     color: #fff;
     font-size: 13px;
@@ -104,7 +126,7 @@ header {
     justify-content: center;
     align-items: center;
 }
-#header-download i{
+#top-header-download i{
     display: flex;
     width: 20px;
     height: 20px;
@@ -113,6 +135,19 @@ header {
     align-items: center;
     font-size: 20px;
 }
-#header-download span{
+@media (max-width: 768px) {
+    #top-header-download i {
+        display: none;
+    }
+    #top-header-download {
+        margin: 0 0 0 10px;
+        padding: 0 10px;
+    }
+}
+#top-header-download span{
     padding-left: 6px;
+}
+#top-header-download:hover{
+    background: #00b4ff;
+    transition: 0.3s;
 }

@@ -23,6 +23,43 @@
    <title>Arsha</title>
 </head>
 <body>
+   <top-header>
+      <div id="top-header-logo">
+         <div></div>
+      </div>
+      <div id="top-header-device">
+         <ul>
+            <li>
+               <i class="bi bi-display"></i>
+            </li>
+            <li>
+               <i class="bi bi-tablet"></i>
+            </li>
+            <li>
+               <i class="bi bi-phone"></i>
+            </li>
+          </ul>
+      </div>
+      <div id="top-header-navigate">
+         <a href="#">
+            <i class="bi bi-chevron-left"></i>
+         </a>
+         <a href="#">Arsha</a>
+         <a href="#">
+            <i class="bi bi-chevron-right"></i>
+         </a>
+      </div>
+      <a id="top-header-redirect">
+         <i class="bi bi-box-arrow-up-right"></i>
+      </a>
+      <a id="top-header-download">
+         <div>
+            <i class="bi bi-download"></i>
+         </div>
+         <span>FREE DOWNLOAD</span>
+      </a>
+
+   </top-header>
    <header id="header" class="header d-flex align-items-center fixed-top">
       <div class="container-fluid container-xl position-relative d-flex align-items-center">
         <a href="index.html" class="logo d-flex align-items-center me-auto">
@@ -67,49 +104,10 @@
             </li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
         <a class="main__btn" href="#about">Get Started</a>
       </div>
     </header>
-    
-   <header>
-      <div id="header-logo">
-         <div></div>
-      </div>
-      <div id="header-device">
-         <ul>
-            <li>
-               <i class="bi bi-display"></i>
-            </li>
-            <li>
-               <i class="bi bi-tablet"></i>
-            </li>
-            <li>
-               <i class="bi bi-phone"></i>
-            </li>
-          </ul>
-      </div>
-      <div id="header-navigate">
-         <a href="#">
-            <i class="bi bi-chevron-left"></i>
-         </a>
-         <a href="#">Arsha</a>
-         <a href="#">
-            <i class="bi bi-chevron-right"></i>
-         </a>
-      </div>
-      <a id="header-redirect">
-         <i class="bi bi-box-arrow-up-right"></i>
-      </a>
-      <a id="header-download">
-         <div>
-            <i class="bi bi-download"></i>
-         </div>
-         <span>FREE DOWNLOAD</span>
-      </a>
-
-   </header>
    <main>
       <!-- 의진 -->
       <section id="hero" class="hero">
@@ -130,20 +128,31 @@
          </div>
          </div>
       </section>
-      <section id="clients" class="clients section light-background" style="padding-top: 12px; padding-bottom: 12px;">
-         <div class="container aos-init aos-animate" data-aos="zoom-in">
-            <div class="client-images">
-               <img src="./main2pic/client-1.png" alt="">
-               <img src="./main2pic/client-2.png" alt="">
-               <img src="./main2pic/client-3.png" alt="">
-               <img src="./main2pic/client-4.png" alt="">
-               <img src="./main2pic/client-5.png" alt="">
-               <img src="./main2pic/client-6.png" alt="">
-               <img src="./main2pic/client-7.png" alt="">
-               <img src="./main2pic/client-8.png" alt="">
-            </div>
+      <section id="clients" class="clients section light-background">
+         <div class="container">
+           <div class="client-slider">
+             <div class="slide-track">
+               <!-- 이미지 세트 1 -->
+               <div class="slide"><img src="./main2pic/client-1.png" alt=""></div>
+               <div class="slide"><img src="./main2pic/client-2.png" alt=""></div>
+               <div class="slide"><img src="./main2pic/client-3.png" alt=""></div>
+               <div class="slide"><img src="./main2pic/client-4.png" alt=""></div>
+               <div class="slide"><img src="./main2pic/client-5.png" alt=""></div>
+               <div class="slide"><img src="./main2pic/client-6.png" alt=""></div>
+               <div class="slide"><img src="./main2pic/client-7.png" alt=""></div>
+               <div class="slide"><img src="./main2pic/client-8.png" alt=""></div>
+               <div class="slide"><img src="./main2pic/client-1.png" alt=""></div>
+               <div class="slide"><img src="./main2pic/client-2.png" alt=""></div>
+               <div class="slide"><img src="./main2pic/client-3.png" alt=""></div>
+               <div class="slide"><img src="./main2pic/client-4.png" alt=""></div>
+               <div class="slide"><img src="./main2pic/client-5.png" alt=""></div>
+               <div class="slide"><img src="./main2pic/client-6.png" alt=""></div>
+               <div class="slide"><img src="./main2pic/client-7.png" alt=""></div>
+               <div class="slide"><img src="./main2pic/client-8.png" alt=""></div>
+             </div>
+           </div>
          </div>
-      </section>
+       </section>
       <section id="about" class="about section">
          <div class="main__title">
             <h2>ABOUT US</h2>
@@ -254,7 +263,7 @@
                </p>
                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                </p>
-               <div>
+               <div id="main5-skills"> 
                   <div class="skills-graph">
                      <span>
                         <div>HTML</div>
@@ -302,7 +311,7 @@
             <h2>SERVICES</h2>
             <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
          </div>
-         <div class="container">
+         <div class="container_RH">
             <div class="services_card_of_4">
                <!-- 좌상향 -->
                <div class="services_card">
@@ -538,7 +547,7 @@
             <h2>TEAM</h2>
             <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
          </div>
-         <div class="container">
+         <div class="container_RH">
             <div class="team_card_of_4">
                <!-- 좌상향 -->
                <div class="team_card">
@@ -659,7 +668,7 @@
             <h2>PRICING</h2>
             <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
          </div>
-         <div class="container">
+         <div class="container_RH">
             <div class="pricing_card_of_3">
                <!-- 왼 -->
                <div class="pricing_card">
@@ -762,7 +771,6 @@
          </div>
       </section>
       <!-- End pricing section -->
-      
       <!-- End 라현 -->
       <!-- 지요 -->
       <div class="Testimonials">
@@ -983,7 +991,7 @@
    <footer classs="footer">
       <!-- 라현 -->
       <div class="footer__top">
-         <div class="container">
+         <div class="container_RH">
             <div class="footer_card">
                <div class="footer_content">
                   <h4>Join Our Newsletter</h4>
