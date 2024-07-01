@@ -9,18 +9,18 @@ section, .section {
     box-sizing: border-box;
 }
 
+@media screen and (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .container {
         max-width: 1140px;
     }
     .main__title {
         max-width: 1140px;
-    }
-}
-
-@media screen and (min-width: 1400px) {
-    .container {
-        max-width: 1320px;
     }
 }
 
@@ -330,6 +330,46 @@ section, .section {
     content: '\f26e';
 }
 
+.main__btn {
+    padding: 10px 28px 12px;
+    color: #47b2e4; /*수정*/
+    border: 1px solid; /*수정*/
+    background-color: #ffffff; /*수정*/
+    border-radius: 50px;
+    font-family: var(--heading-font);
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none; /*추가*/
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.main__btn:hover {
+    background-color: #41a5d3;
+    color: #ffffff; /*추가*/
+    transform: translateY(-2px);
+}
+
+.main__btn_checked {
+    padding: 10px 28px 12px;
+    background-color: #47b2e4;
+    border: 1px solid;
+    color: #ffffff;
+    border-radius: 50px;
+    font-family: var(--heading-font);
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
 /*.bi::before {
     display: inline-block;
     font-family: bootstrap-icons !important;
@@ -426,7 +466,7 @@ section, .section {
 }
 /* 버튼 추가할 자리*/
 
-/* ----------------- pricing section ----------------- */
+/* ----------------- services section ----------------- */
 
 .services_section {
     color: var(--default-color);
@@ -487,7 +527,7 @@ section, .section {
     margin-bottom: 15px;
     font-size: 20px;
     color: var(--heading-color);
-    /*font-family 추가해야 됨*/
+    font-family: var(--heading-font);
     margin-top: 0;
     line-height: 1.2;
 }
