@@ -28,6 +28,8 @@
     --nav-font: "Poppins", sans-serif;
   }
 
+
+
   ::after, ::before {
     box-sizing: border-box;
   }
@@ -53,7 +55,7 @@
   margin-top: 0;
   padding: 0 0 20px;
   font-size: 32px;
-  font-weight: 700px;
+  font-weight: bold;
   position: relative;
   color: var(--heading-color);
   font-family: var(--heading-font);
