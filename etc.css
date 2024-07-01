@@ -131,46 +131,87 @@ p{
 .btn-watch-video:active {
         color:#47b2e4;
 }
-.clients {
-        padding: 12px 0;
-    }
+#clients {
+    padding: 12px 0;
+    width: 100vw; /* 뷰포트 너비의 100%를 차지 */
+    margin-left: calc(-50vw + 50%); /* 화면 중앙 정렬 */
+}
 
-.ligt-background{
+.light-background {
     background-color: #f5f6f8;
 }
-.clients {
-        padding: 60px 0;
+
+.client-slider {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+}
+
+.slide-track {
+    display: flex;
+    width: 200%; /* 두 배의 너비로 설정 */
+    animation: scroll 40s linear infinite;
+}
+
+.slide {
+    flex: 0 0 auto; /* flex-grow: 0, flex-shrink: 0, flex-basis: auto */
+    width: calc(12.5% - 50px); /* 100% / 8 - 여백 */
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+}
+
+.slide img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
     }
-    .client-images {
-        display: flex;
-        overflow-x: auto;
-        gap: 20px;
-        margin-right: -120px; /* 우측 마진을 음수로 설정하여 이미지가 왼쪽으로 움직이게 합니다. */
+    100% {
+        transform: translateX(-50%);
     }
-    
-    .client-images img {
-        width: 91.2px;
-        height: auto;
-        transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* 반응형 디자인 */
+@media screen and (max-width: 1200px) {
+    .slide {
+        width: calc(16.666% - 50px); /* 100% / 6 - 여백 */
     }
-    
-    .client-images img:hover {
-        transform: scale(1.1); /* 마우스 호버 시 이미지가 약간 커지는 효과 */
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 그림자 효과 추가 */
+}
+
+@media screen and (max-width: 768px) {
+    .slide {
+        width: calc(25% - 50px); /* 100% / 4 - 여백 */
     }
-    .clients{padding: 12px 0;}
-    .container{
-        max-width: 960px;
-        width: 100%;
-        margin-right: auto;
-        margin-left: auto;
+}
+
+@media screen and (max-width: 480px) {
+    .slide {
+        width: calc(50% - 50px); /* 100% / 2 - 여백 */
     }
-    .about ul img {
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .slide-track {
+        animation-play-state: paused;
+    }
+}
+  
+.about ul img {
         font-size: 20px;
         padding-right: 4px;
         color: #47b2e4;
     }
-
+    .about.section {
+        background-color: #ffffff;
+    }
     .section {
         color: #444444; /* var() 함수 없이 직접 색상 지정 */
         background-color: #ffffff;
@@ -558,4 +599,12 @@ input[id *= "answer"]:checked + label .faq-question p {
 
 input[id *= "answer"]:checked ~ .faq-content {
   max-height: 500px;
+}
+
+.buttons .main__btn {
+    padding: 10px 28px 12px;
+    background-color: #47b2e4;
+    border: none;
+    color: #ffffff;
+    /* 나머지 스타일 유지 */
 }
