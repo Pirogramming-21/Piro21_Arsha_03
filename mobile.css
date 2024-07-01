@@ -58,9 +58,9 @@
 }
 
 @media (max-width: 991px) {
-   /* .testimonials__intro__slider {
+   .testimonials__intro__slider {
       width: 696px;
-   } */
+   }
    .testimonials__sent {
       width: 696px;
       margin: 0;
@@ -105,6 +105,10 @@
 }
 
 @media (max-width: 767px) {
+   .testimonials__intro__slider {
+      width: 516px;
+   }
+
    .QandA__content > div {
       width: 516px;
    }

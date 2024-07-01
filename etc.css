@@ -205,122 +205,121 @@ p{
 }
   
 .about ul img {
-        font-size: 20px;
-        padding-right: 4px;
-        color: #47b2e4;
-    }
-    .about.section {
-        background-color: #ffffff;
-    }
-    .section {
-        color: #444444; /* var() 함수 없이 직접 색상 지정 */
-        background-color: #ffffff;
-        padding: 60px 0;
-        scroll-margin-top: 88px;
-        overflow: hidden; /* 'clip' 대신 'hidden' */
-    }
-    
-    .row {
-        display: flex;
-        gap: 20px;
-    }
-    
-    .column {
-        flex: 1;
-        padding: 10px;
-    }
-    
-    @media (min-width: 992px) {
-        .column {
-            flex: 0 0 auto;
-            width: 50%;
-        }
-    }
-    
-    
-    ul {
-        list-style-type: none;
-        padding: 0;
-    }
-    
-    li {
-        display: flex;
-        align-items: center;
-        margin-bottom: 10px;
-    }
-    
-    li img {
-        width: 20px;
-        height: 20px;
-        margin-right: 10px;
-    }
-    
-    li span {
-        font-size: 16px;
-    }
-    
-    .about .read-more {
-        color: #47b2e4;
-        background-color: #ffffff;
-        font-family: "Jost", sans-serif;
-        font-weight: 500;
-        font-size: 16px;
-        letter-spacing: 1px;
-        padding: 8px 28px;
-        border-radius: 5px;
-        transition: background-color 0.3s, color 0.3s;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        border: 2px solid #47b2e4;
-        text-decoration: none;
-    }
-    
-    .about .read-more .svg {
-        fill: #47b2e4; /* 기본 SVG 색상 */
-        transition: fill 0.3s; /* SVG 색상 변환에 대한 전환 효과 */
-    }
-    
-    .about .read-more:hover {
-        background-color: #47b2e4; /* 호버 시 배경색 */
-        color: #ffffff;
-        transition: fill 0.3s;
-        text-decoration: none; /* 호버 시 링크의 밑줄 제거 */
-    }
-    
-    .about .read-more:hover svg {
-        fill: #ffffff;
-        transform: translateX(4px);
-        transition: fill 0.3s, transform 0.3s;
-    }
-    #why-us {
-        background-color: #f5f6f8;
-    }
-    #why-us .column h3 {
-        font-weight: 400;
-        font-size: 34px;
-        color:#37517e;
-        font-family: "Jost",  sans-serif;
-    }
+    font-size: 20px;
+    padding-right: 4px;
+    color: #47b2e4;
+}
+.about.section {
+    background-color: #ffffff;
+}
+.section {
+    color: #444444; /* var() 함수 없이 직접 색상 지정 */
+    background-color: #ffffff;
+    padding: 60px 0;
+    scroll-margin-top: 88px;
+    overflow: hidden; /* 'clip' 대신 'hidden' */
+}
 
-    /* 부모 컨테이너를 플렉스 컨테이너로 설정 */
-    #why-us .container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between; /* 각 row 사이의 공간을 균등하게 배분 */
-    }
-    
-    #why-us .row {
-        width: 100%;
-        display: flex;
-        justify-content: space-between; /* 각 column 사이의 공간을 균등하게 배분 */
-        margin-bottom: 20px; /* row 사이의 간격 설정 */
-    }
-    
-    #why-us .left-column {
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+}
+
+@media (min-width: 992px) {
+    .column {
         flex: 0 0 auto;
         width: 50%;
     }
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+li img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+li span {
+    font-size: 16px;
+}
+
+.about .read-more {
+    color: #47b2e4;
+    background-color: #ffffff;
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 8px 28px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #47b2e4;
+    text-decoration: none;
+}
+
+.about .read-more .svg {
+    fill: #47b2e4; /* 기본 SVG 색상 */
+    transition: fill 0.3s; /* SVG 색상 변환에 대한 전환 효과 */
+}
+
+.about .read-more:hover {
+    background-color: #47b2e4; /* 호버 시 배경색 */
+    color: #ffffff;
+    transition: fill 0.3s;
+    text-decoration: none; /* 호버 시 링크의 밑줄 제거 */
+}
+
+.about .read-more:hover svg {
+    fill: #ffffff;
+    transform: translateX(4px);
+    transition: fill 0.3s, transform 0.3s;
+}
+#why-us {
+    background-color: #f5f6f8;
+}
+#why-us .column h3 {
+    font-weight: 400;
+    font-size: 34px;
+    color:#37517e;
+    font-family: "Jost",  sans-serif;
+}
+
+/* 부모 컨테이너를 플렉스 컨테이너로 설정 */
+#why-us .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* 각 row 사이의 공간을 균등하게 배분 */
+}
+
+#why-us .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* 각 column 사이의 공간을 균등하게 배분 */
+    margin-bottom: 20px; /* row 사이의 간격 설정 */
+}
+
+#why-us .left-column {
+    flex: 0 0 auto;
+    width: 50%;
 }
     
     
