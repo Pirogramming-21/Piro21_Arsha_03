@@ -38,6 +38,7 @@
    font-weight: bold;
    padding-bottom: 12px;
    color: var(--heading-color);
+   font-family: var(--heading-font);
 }
 .footer__bottom__LandS__menu li {
    padding: 10px 0;

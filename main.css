@@ -1,72 +1,18 @@
-/* 이 부분부터 공통 1번 */ 
-.main__title {
-    width: 100%;
-    margin:  0px 78px;
-    padding: 0px 12px 60px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    position: relative;
-}
-
-.main__title h2 {
-  display: block;
-  margin: 0 0 20px;
-  margin-top: 0;
-  padding: 0 0 20px;
-  font-size: 32px;
-  font-weight: 700;
-  position: relative;
-  color: var(--heading-color);
-  /*font-family 아직 없음*/
-}
-
-.main__title h2::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 160px;
-  height: 1px;
-  background: gray;
-  left: 0;
-  right: 0;
-  bottom: 1px;
-  margin: auto;
-}
-
-.main__title h2::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 60px;
-    height: 3px;
-    background: var(--accent-color);
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-}
-
-.main__title p {
-  margin: 0 76px;
-}
-
-/*  End 공통 부분 1번 */
-/* 1번 구조 설명*/
-/* main__title 안에 <h2> 태그로 제목 (ex. Team, About us) 이 있고 
-Team 밑의 긴 선이 after와 before로 구현되어 있음, 
-또한 p 태그는 본인 파트 디자인에 맞게 포함/미포함 해서 사용하시길 !*/
-
 /* 공통 부분 아코디언 */
-/* <input type="checkbox" id="answer$">
-   <label for="answer$">
-      <i class="bi bi-question-circle"><p>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</p></i>
-      <i class="bi bi-chevron-right"></i>
-   </label>
-   <div>
-      Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-   </div>
+/* <div class="QandA__content">
+      <ul>
+         <li>
+            <input type="checkbox" id="answer$">
+            <label for="answer$">
+               <i class="bi bi-question-circle"><p>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</p></i>
+               <i class="bi bi-chevron-right"></i>
+            </label>
+            <div>
+               Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+            </div>
+         </li>
    요런 식으로 적어야 함
+   ** class 이름이랑 id 바꾸면 안 됨!!! **
 */
 input[id *= "answer"] {
    display: none;
@@ -117,30 +63,10 @@ input[id *= "answer"]:checked + label .bi-chevron-right {
    color: var(--accent-color);
 }
 
-.questions__content ul li p:hover {
+.QandA__content ul li p:hover {
    color: var(--accent-color);
 }
 .bi-chevron-right:hover {
    color: var(--accent-color);
 }
 
-.main__btn {
-   padding: 10px 28px 12px;
-   background-color: #47b2e4;
-   border: none;
-   color: #ffffff;
-   border-radius: 50px;
-   font-family: var(--heading-font);
-   font-weight: 500;
-   font-size: 15px;
-   letter-spacing: 1px;
-   display: inline-block;
-   text-transform: uppercase;
-   transition: background-color 0.3s, transform 0.3s;
-   cursor: pointer;
-}
-
-.main__btn:hover {
-   background-color: #41a5d3;
-   transform: translateY(-2px);
-}

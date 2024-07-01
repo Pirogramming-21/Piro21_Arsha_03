@@ -101,6 +101,18 @@
    100% {transform: translateX(-100%);}
 }
 
+.testimonials__intro__slider:nth-child(1) ~ .testimonials__bar > div:nth-child(1),
+.testimonials__intro__slider:nth-child(2) ~ .testimonials__bar > div:nth-child(2),
+.testimonials__intro__slider:nth-child(3) ~ .testimonials__bar > div:nth-child(3),
+.testimonials__intro__slider:nth-child(4) ~ .testimonials__bar > div:nth-child(4),
+.testimonials__intro__slider:nth-child(5) ~ .testimonials__bar > div:nth-child(5) {
+  background-color: var(--accent-color);
+}
+
+.testimonials__bar > div:nth-child(1):checked {
+   background-color: var(--accent-color);
+}
+
 .testimonials__bar {
    margin-top: 20px;
    display: flex;
