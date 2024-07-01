@@ -71,6 +71,9 @@ top-header {
 }
 #top-header-navigate{
     margin-right: auto;
+}
+#top-header-navigate{
+    margin: auto;
     padding-left: 0;
     display: flex;
     align-items: center;

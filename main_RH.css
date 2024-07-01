@@ -9,14 +9,26 @@ section, .section {
     box-sizing: border-box;
 }
 
-@media screen and (min-width: 1400px) {
-    .container {
-        max-width: 1320px;
+@media screen and (min-width: 576px) {
+    .container_RH {
+        max-width: 540px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container_RH {
+        max-width: 720px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container_RH {
+        max-width: 960px;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    .container {
+    .container_RH {
         max-width: 1140px;
     }
     .main__title {
@@ -24,27 +36,18 @@ section, .section {
     }
 }
 
-@media screen and (min-width: 992px) {
-    .container {
-        max-width: 960px;
+@media screen and (min-width: 1400px) {
+    .container_RH {
+        max-width: 1320px;
     }
 }
 
-@media screen and (min-width: 768px) {
-    .container {
-        max-width: 720px;
-    }
-}
-
-@media screen and (min-width: 576px) {
-    .container {
-        max-width: 540px;
-    }
-}
-
-.container {
+.team_section {
     width: 100%;
-    max-width: 1140px;
+}
+
+.container_RH {
+    width: 100%;
     padding-right: 0.75rem;
     padding-left: 0.75rem;
     margin-left: auto;
@@ -73,6 +76,20 @@ section, .section {
     padding: 0 12px;
 }
 
+@media screen and (max-width: 991px) {
+    .team_card {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .team_card {
+        flex: 0 0 auto;
+        width: 50%;
+    }   
+}
+
 .team_card_content {
     background-color: #ffffff;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -82,6 +99,10 @@ section, .section {
     padding: 30px;
     align-items: flex-start;
     display: flex;
+}
+
+.team_card_content:hover {
+    transform: translateY(-10px);
 }
 
 .pic {
@@ -161,12 +182,12 @@ section, .section {
     width: 36px;
     height: 36px;
     margin-left: 8px;
-    color: var(--accent-color);
+    /*color: var(--accent-color);*/
     text-decoration: none;
 }
 
 .social a:hover {
-    color: var(--accent-color);
+    background: var(--accent-color);
     text-decoration: none;
 }
 
@@ -235,6 +256,7 @@ section, .section {
     color: var(--default-color);
     background-color: #f5f6f8;
     padding: 60px 0px;
+    width: 100%;
     /*scroll-margin-top*/
 }
 
@@ -248,6 +270,12 @@ section, .section {
     margin-left: calc(-0.5*var(--bs-gutter-x));
 }
 
+@media screen and (max-width: 991px) {
+    .pricing_card {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}
 @media screen and (min-width: 992px) {
     .pricing_card {
         flex: 0 0 auto;
@@ -343,7 +371,7 @@ section, .section {
     display: inline-block;
     text-decoration: none; /*추가*/
     text-transform: uppercase;
-    transition: background-color 0.3s, transform 0.3s;
+    transition: 0.3s;
     cursor: pointer;
 }
 
@@ -472,6 +500,7 @@ section, .section {
     color: var(--default-color);
     background-color: #f5f6f8;
     padding: 60px 0px;
+    width: 100%;
     /*scroll-margin-top*/
 }
 
@@ -499,6 +528,13 @@ section, .section {
     }
 }
 
+@media screen and (min-width: 1200px) {
+    .services_card {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+}
+
 .services_card_content {
     background-color: #ffffff;
     box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
@@ -522,6 +558,10 @@ section, .section {
     content: '\f66b';
 }
 
+.services_card_content:hover {
+    transform: translateY(-10px);
+}
+
 .services_card_content h4 {
     font-weight: 700;
     margin-bottom: 15px;
@@ -536,6 +576,10 @@ section, .section {
     color: var(--heading-color);
     transition: ease-in-out 0.3s;
     text-decoration: none;
+}
+
+.services_card_content h4 a:hover {
+    color: var(--accent-color);
 }
 
 .stretched-link::after {
