@@ -9,9 +9,21 @@ section, .section {
     box-sizing: border-box;
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 576px) {
     .container {
-        max-width: 1320px;
+        max-width: 540px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        max-width: 960px;
     }
 }
 
@@ -24,27 +36,14 @@ section, .section {
     }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1400px) {
     .container {
-        max-width: 960px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .container {
-        max-width: 720px;
-    }
-}
-
-@media screen and (min-width: 576px) {
-    .container {
-        max-width: 540px;
+        max-width: 1320px;
     }
 }
 
 .container {
     width: 100%;
-    max-width: 1140px;
     padding-right: 0.75rem;
     padding-left: 0.75rem;
     margin-left: auto;
@@ -249,6 +248,12 @@ section, .section {
     margin-left: calc(-0.5*var(--bs-gutter-x));
 }
 
+@media screen and (max-width: 991px) {
+    .pricing_card {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}
 @media screen and (min-width: 992px) {
     .pricing_card {
         flex: 0 0 auto;
@@ -344,7 +349,7 @@ section, .section {
     display: inline-block;
     text-decoration: none; /*추가*/
     text-transform: uppercase;
-    transition: background-color 0.3s, transform 0.3s;
+    transition: 0.3s;
     cursor: pointer;
 }
 
