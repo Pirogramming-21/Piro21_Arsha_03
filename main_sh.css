@@ -21,6 +21,9 @@ main {
 #main5 {
     display: flex;
 }
+#main5 p{
+    line-height: 1.25;
+}
 #main5 img{
     width: 636px;
 }
@@ -39,11 +42,13 @@ main {
         width: 546px;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     #main5-wrap {
+        width: 960px;
     }
-    #main5-left, #main5-right {
-     }
+    #main5 img{
+        width: 456px;
+    }
 }
 #main5-left{
     display: flex;
@@ -69,10 +74,13 @@ main {
     font-family: var(--default-font);
     margin: 0px 0px 16px;
 }
+#main5-skills{
+    width:100%
+}
 .skills-graph{
     font-size: 12px;
     height: 60px;
-    width: 40rem;
+    width: 100%;
     display: block;
     background: none;
     border-radius: 0;
