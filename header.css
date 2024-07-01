@@ -33,6 +33,13 @@ header {
     display: flex;
     align-items: center;
 }
+#header-device li{
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #header-device li i{
     display: flex;
     padding: 5px 5px;
@@ -58,9 +65,8 @@ header {
 }
 #header-navigate a:nth-of-type(1), #header-navigate a:nth-of-type(3){
     display: flex;
-    padding: 5px 5px;
-    width: 14px;
-    height: 14px;
+    width: 24px;
+    height: 24px;
     color: rgba(255, 255, 255, 0.5);
     justify-content: center;
     align-items: center;
