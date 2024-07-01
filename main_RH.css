@@ -42,6 +42,10 @@ section, .section {
     }
 }
 
+.team_section {
+    width: 100%;
+}
+
 .container {
     width: 100%;
     padding-right: 0.75rem;
@@ -70,6 +74,20 @@ section, .section {
     max-width: 100%;
     margin: 24px 0 0;
     padding: 0 12px;
+}
+
+@media screen and (max-width: 991px) {
+    .team_card {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .team_card {
+        flex: 0 0 auto;
+        width: 50%;
+    }   
 }
 
 .team_card_content {
