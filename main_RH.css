@@ -101,6 +101,10 @@ section, .section {
     display: flex;
 }
 
+.team_card_content:hover {
+    transform: translateY(-10px);
+}
+
 .pic {
     overflow: hidden;
     width: 150px;
@@ -178,12 +182,12 @@ section, .section {
     width: 36px;
     height: 36px;
     margin-left: 8px;
-    color: var(--accent-color);
+    /*color: var(--accent-color);*/
     text-decoration: none;
 }
 
 .social a:hover {
-    color: var(--accent-color);
+    background: var(--accent-color);
     text-decoration: none;
 }
 
