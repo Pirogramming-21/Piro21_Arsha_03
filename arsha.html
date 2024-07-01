@@ -9,16 +9,192 @@
    <link rel="stylesheet" href="./main.css">
    <link rel="stylesheet" href="./footer.css">
    <link rel="stylesheet" href="./mobile.css">
+   <link rel="stylesheet" href="./etc.css">
    <title>Arsha</title>
 </head>
 <body>
-   <header></header>
+<header id="header" class="header d-flex align-items-center fixed-top">
+  <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+    <a href="index.html" class="logo d-flex align-items-center me-auto">
+      <h1 class="sitename">Arsha</h1>
+    </a>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li class="dropdown">
+          <a href="#">
+            <span>Dropdown</span>
+            <i class="bi bi-chevron-down toggle-dropdown"></i>
+          </a>
+          <ul>
+            <li><a href="#">Dropdown 1</a></li>
+            <li class="dropdown">
+              <a href="#">
+                <span>Deep Dropdown</span>
+                <i class="bi bi-chevron-down toggle-dropdown"></i>
+              </a>
+              <ul>
+                <li><a href="#">Deep Dropdown 1</a></li>
+                <li><a href="#">Deep Dropdown 2</a></li>
+                <li><a href="#">Deep Dropdown 3</a></li>
+                <li><a href="#">Deep Dropdown 4</a></li>
+                <li><a href="#">Deep Dropdown 5</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Dropdown 2</a></li>
+            <li><a href="#">Dropdown 3</a></li>
+            <li><a href="#">Dropdown 4</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+    </nav>
+
+
+    <a class="main__btn" href="#about">Get Started</a>
+
+  </div>
+</header>
+    
    <main>
       <!-- 의진 -->
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+      <section id="hero" class="hero">
+         <div class="content">
+         <div class="text-content">
+            <h1>Better Solutions For Your Business</h1>
+            <p>We are team of talented designers making websites with Bootstrap</p>
+            <div class="buttons">
+               <a href="#about" class="main__btn">Get Started</a>
+               <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video">
+                  <img src="./play-circle.svg" alt="Watch Video">
+                  <span>Watch Video</span>
+               </a>
+            </div>
+         </div>
+         <div class="image-content">
+            <img src="hero-img.png" class="hero-img" alt="Hero Image">
+         </div>
+         </div>
+      </section>
+      <section id="clients" class="clients section light-background" style="padding-top: 12px; padding-bottom: 12px;">
+         <div class="container aos-init aos-animate" data-aos="zoom-in">
+            <div class="client-images">
+               <img src="./main2pic/client-1.png" alt="">
+               <img src="./main2pic/client-2.png" alt="">
+               <img src="./main2pic/client-3.png" alt="">
+               <img src="./main2pic/client-4.png" alt="">
+               <img src="./main2pic/client-5.png" alt="">
+               <img src="./main2pic/client-6.png" alt="">
+               <img src="./main2pic/client-7.png" alt="">
+               <img src="./main2pic/client-8.png" alt="">
+            </div>
+
+         </div>
+      </section>
+      <section id="about" class="about section">
+         <div class="main__title">
+            <h2>ABOUT US</h2>
+         </div>
+         <div class="container">
+            <div class ="row">
+               <div class="column">
+                  <ul>
+                     <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.
+                     </p>
+                     <li>
+                        <img src="./check2-circle.svg" alt="">
+                        <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+                     </li>
+                     <li>
+                        <img src="./check2-circle.svg" alt="">
+                        <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span>
+
+
+                     </li>
+                     <li>
+                        <img src="./check2-circle.svg" alt="">
+                        <span>Ullamco laboris nisi ut aliquip ex ea commodo</span>
+
+                     </li>
+                  </ul>
+               </div>
+               <div class="column">
+                  <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                  <a href="#" class="read-more"><span>Read More</span>
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#47b2e4" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                     </svg>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="why-us">
+         <div class="container">
+            <div class="row">
+               <div class="column left-column col-lg-7">
+                     <div>
+                        <h3>
+                           <span>Eum ipsam laborum deleniti </span>
+                           <strong style="font-weight: bold;">velit pariatur architecto aut nihil</strong>
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit</p>
+                     </div>
+                     <div class="faq-container px-xl-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                        <div class="faq-item faq-active">
+                           <input type="checkbox" id="answer1">
+                           <label for="answer1">
+                                 <i class="bi bi-question-circle"></i>
+                                 <p><span>01</span> Non consectetur a erat nam at lectus urna duis?</p>
+                                 <i class="bi bi-chevron-right"></i>
+                           </label>
+                           <div class="faq-content">
+                                 <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                           </div>
+                        </div><!-- End Faq item -->
+     
+                        <div class="faq-item">
+                           <input type="checkbox" id="answer2">
+                           <label for="answer2">
+                                 <i class="bi bi-question-circle"></i>
+                                 <p><span>02</span> Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</p>
+                                 <i class="bi bi-chevron-right"></i>
+                           </label>
+                           <div class="faq-content">
+                                 <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                           </div>
+                        </div><!-- End Faq item -->
+     
+                        <div class="faq-item">
+                           <input type="checkbox" id="answer3">
+                           <label for="answer3">
+                                 <i class="bi bi-question-circle"></i>
+                                 <p><span>03</span> Dolor sit amet consectetur adipiscing elit pellentesque?</p>
+                                 <i class="bi bi-chevron-right"></i>
+                           </label>
+                           <div class="faq-content">
+                                 <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
+                           </div>
+                        </div><!-- End Faq item -->
+                     </div>
+               </div>
+               <div class="column right-column col-lg-5">
+                  <img src="./main2pic/why-us.png" class="responsive-img">
+               </div>
+            </div>
+         </div>
+     </section>
+     
       <!-- 시환 -->
       <div></div>
       <div></div>
