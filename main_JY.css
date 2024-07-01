@@ -13,7 +13,7 @@
    height: 300px;
 }
 
-.testimonials__intro {
+.testimonials__intro__slider {
    overflow: hidden;
    display: flex;
    flex-wrap: wrap;
@@ -25,14 +25,14 @@
    height: 100%;
 }
 
-.testimonials__intro__slider {
+.testimonials__intro__slide {
    display: flex;
    flex-direction: column;
    align-items: center;
    animation: slider 25s infinite linear;
    position: absolute;
 }
-.testimonials__intro__slider > img {
+.testimonials__intro__slide > img {
    width: 120px;
    height: 120px;
    border-radius: 50%;
@@ -77,19 +77,19 @@
    font-style: italic;
 }
 
-.testimonials__intro__slider:nth-child(1) {
+.testimonials__intro__slide:nth-child(1) {
    animation-delay: 0;
 }
-.testimonials__intro__slider:nth-child(2) {
+.testimonials__intro__slide:nth-child(2) {
    animation-delay: -5s;
 }
-.testimonials__intro__slider:nth-child(3) {
+.testimonials__intro__slide:nth-child(3) {
    animation-delay: -10s;
 }
-.testimonials__intro__slider:nth-child(4) {
+.testimonials__intro__slide:nth-child(4) {
    animation-delay: -15s;
 }
-.testimonials__intro__slider:nth-child(5) {
+.testimonials__intro__slide:nth-child(5) {
    animation-delay: -20s;
 }
 
@@ -101,25 +101,13 @@
    100% {transform: translateX(-100%);}
 }
 
-.testimonials__intro__slider:nth-child(1) ~ .testimonials__bar > div:nth-child(1),
-.testimonials__intro__slider:nth-child(2) ~ .testimonials__bar > div:nth-child(2),
-.testimonials__intro__slider:nth-child(3) ~ .testimonials__bar > div:nth-child(3),
-.testimonials__intro__slider:nth-child(4) ~ .testimonials__bar > div:nth-child(4),
-.testimonials__intro__slider:nth-child(5) ~ .testimonials__bar > div:nth-child(5) {
-  background-color: var(--accent-color);
-}
-
-.testimonials__bar > div:nth-child(1):checked {
-   background-color: var(--accent-color);
-}
-
 .testimonials__bar {
    margin-top: 20px;
    display: flex;
    justify-content: center;
    gap: 8px;
 }
-.testimonials__bar > div {
+.testimonials__bar > label {
    width: 12px;
    height: 12px;
    background-color: color-mix(in srgb, var(--default-color), transparent 85%);
@@ -136,30 +124,6 @@
    align-items: center;
    text-align: center;
 }
-
-.questions__content {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   margin: 0 76px;
-   padding: 0 12px;
-}
-.questions__content ul {
-   display: flex;
-   justify-content: center;
-   flex-wrap: wrap;
-   width: 1088px;
-}
-.questions__content li {
-   display: flex;
-   flex-direction: column;
-   width: 100%;
-   padding: 20px;
-   background-color: white;
-   margin-bottom: 20px;
-}
-
-.questions__content
 
 .contact__container {
    /* width: 100%; */

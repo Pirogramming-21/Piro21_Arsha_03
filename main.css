@@ -12,8 +12,32 @@
             </div>
          </li>
    요런 식으로 적어야 함
+   나머지 디자인은 본인이 바꾸면 됨
    ** class 이름이랑 id 바꾸면 안 됨!!! **
 */
+
+.QandA__content {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 0 76px;
+   padding: 0 12px;
+}
+.QandA__content ul {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   width: 1088px;
+}
+.QandA__content li {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   padding: 20px;
+   background-color: white;
+   margin-bottom: 20px;
+}
+
 input[id *= "answer"] {
    display: none;
 }
