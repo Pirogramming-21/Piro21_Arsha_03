@@ -94,3 +94,69 @@ input[id *= "answer"]:checked + label .bi-chevron-right {
    color: var(--accent-color);
 }
 
+div {
+   display: block;
+}
+
+/* 이 부분부터 공통 1번 */
+  .main__title {
+    width: 100%;
+    margin:  0px 78px;
+    padding: 0px 12px 60px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: relative;
+}
+
+.main__title h2 {
+  display: block;
+  margin: 0 0 20px;
+  margin-top: 0;
+  padding: 0 0 20px;
+  font-size: 32px;
+  font-weight: bold;
+  position: relative;
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+}
+
+.main__title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 160px;
+  height: 1px;
+  background: gray;
+  left: 0;
+  right: 0;
+  bottom: 1px;
+  margin: auto;
+}
+
+.main__title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--accent-color);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.main__title p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: var(--default-font);
+  color: var(--default-color);
+  font-size: 16px;
+}
+
+/*  End 공통 부분 1번 */
+/* 1번 구조 설명*/
+/* main__title 안에 <h2> 태그로 제목 (ex. Team, About us) 이 있고 
+Team 밑의 긴 선이 after와 before로 구현되어 있음, 
+또한 p 태그는 본인 파트 디자인에 맞게 포함/미포함 해서 사용하시길 !*/

@@ -17,6 +17,7 @@
    font-weight: 600;
    color: var(--heading-color);
    margin-bottom: 16px;
+   font-family: var(--heading-font);
 }
 
 .corpo__info {
@@ -25,6 +26,7 @@
 }
 .corpo__info p {
    margin-bottom: 5px;
+   font-family: var(--default-font);
 }
 .corpo__info > .phone {
    margin-top: 16px;
@@ -52,6 +54,7 @@
 }
 .footer__bottom__LandS__menu span {
    color: var(--default-color);
+   font-size: 14px;
 }
 
 .footer__bottom__LandS__menu span:hover {
@@ -65,8 +68,9 @@
 }
 .footer__bottom__follow p {
    margin-bottom: 16px;
-   font-size: 14px;
+   font-family: var(--default-font);
    color: var(--default-color);
+   font-size: 14px;
 }
 .footer__bottom__follow div {
    display: flex;
@@ -125,4 +129,97 @@
    .footer__bottom__follow {
    width: 33.33333333%;
    }
+}
+
+.footer {
+    color: var(--default-color);
+    background-color: #ffffff;
+    font-size: 14px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.footer__top {
+    background-color: lightgray;
+    padding: 50px 0;
+}
+
+.footer_card {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1*var(--bs-gutter-y));
+    margin-right: calc(-0.5*var(--bs-gutter-x));
+    margin-left: calc(-0.5*var(--bs-gutter-x));
+    text-align: center;
+    justify-content: center;
+}
+
+.footer_content {
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x)*0.5);
+    padding-left: calc(var(--bs-gutter-x)*0.5);
+    margin-top: var(--bs-gutter-y);
+}
+
+@media screen and (min-width: 992px) {
+    .footer_content {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+
+.footer_content h4 {
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 12px;
+    color: #37517e;
+    font-family: var(--heading-font);
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.footer_content p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.email_form {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding: 6px 8px;
+    position: relative;
+    background-color: white;
+    border: 1px solid gray;
+    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+    display: flex;
+    transition: 0.3s;
+    border-radius: 50px;
+}
+
+.email_form input[type=email] {
+    border: 0;
+    padding: 4px;
+    width: 100%;
+    background-color: white;
+    color: #444444;
+    margin: 0;
+    /*font-family 추가할 자리*/
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.email_form input[type=submit] {
+    border: 0;
+    padding: 0 20px;
+    background: #47b2e4;
+    color: #ffffff;
+    margin: -7px -8px -7px 0;
+    /*font-family 추가할 자리*/
+    font-size: 16px;
+    transition: 0.3s;
+    border-radius: 50px;
 }

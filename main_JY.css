@@ -45,12 +45,14 @@
    font-weight: bold;
    margin: 10px 0 5px 0;
    color: var(--heading-color);
+   font-family: var(--heading-font);
 }
 
 .testimonials__position {
    color: color-mix(in srgb, var(--default-color), transparent 40%);
    font-size: 14px;
    padding: 0 0 15px;
+   font-family: var(--heading-font);
 }
 
 .star {
@@ -77,6 +79,7 @@
    font-style: italic;
 }
 
+/* testimonials 슬라이더 */
 .testimonials__intro__slide:nth-child(1) {
    animation-delay: 0;
 }
@@ -115,7 +118,7 @@
 }
 
 .questions__container {
-   background-color: var(--background-color);
+   background-color: #f5f6f8;
    width: 100%;
    height: 100%;
    padding: 60px 0;
