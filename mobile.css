@@ -1,0 +1,43 @@
+/* 지요 */
+@media (min-width: 1400px) {
+   .QandA__container li {
+      width: 1076px;
+   }
+}
+
+@media screen and (min-width: 1200px) {
+   .QandA__container li {
+      max-width: 926px;
+   }
+}
+
+@media (min-width: 992px) {
+   .testimonials__sent {
+       width: 80%;
+   }
+
+   .QandA__content {
+      flex: 0 0 auto;
+      width: 83.33333333%;
+   }
+
+   .contact__info {
+      flex: 0 0 auto;
+      width: 41.66666667%;
+   }
+   .contact__per {
+   flex: 0 0 auto;
+   width: 58.33333333%;
+   }
+}
+
+@media (min-width: 768px) {
+   .contact__per__name, .contact__per__email {
+      flex: 0 0 auto;
+      width: 50%;
+   }
+   .contact__per__subject, .contact__per__message {
+      flex: 0 0 auto;
+      width: 100%;
+  }
+}

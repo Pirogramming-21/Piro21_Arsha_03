@@ -1,3 +1,7 @@
+.Testimonials {
+   width: 100%;
+}
+
 .testimonials__container {
    width: 100%;
    padding: 60px 0;
@@ -117,6 +121,9 @@
    border-radius: 50%;
 }
 
+.Questions {
+   width: 100%;
+}
 .questions__container {
    background-color: #f5f6f8;
    width: 100%;
@@ -127,9 +134,23 @@
    align-items: center;
    text-align: center;
 }
+.QandA__container {
+   margin: 0 76px;
+   padding: 0 12px;
+   display: flex;
+   justify-content: center;
+}
+.QandA__content {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
 
+.Contact {
+   width: 100%;
+}
 .contact__container {
-   /* width: 100%; */
+   width: 100%;
    padding: 60px 0;
    display: flex;
    flex-direction: column;
@@ -212,26 +233,6 @@
    flex-wrap: wrap;
    margin: -24px -12px;
 }
-@media (min-width: 992px) {
-   .contact__info {
-       flex: 0 0 auto;
-       width: 41.66666667%;
-   }
-   .contact__per {
-      flex: 0 0 auto;
-      width: 58.33333333%;
-  }
-}
-@media (min-width: 768px) {
-   .contact__per__name, .contact__per__email {
-      flex: 0 0 auto;
-      width: 50%;
-   }
-   .contact__per__subject, .contact__per__message {
-      flex: 0 0 auto;
-      width: 100%;
-  }
-}
 
 .contact__per__container > div {
    display: flex;
@@ -260,7 +261,14 @@
    outline: none;
 }
 
-.main__btn {
+.contact__per__btn > .main__btn {
    font-size: 16px;
+   font-family: var(--default-font);
    padding: 10px 30px;
+   background-color: var(--accent-color);
+   color: #ffffff;
+   transition: .4s;
+}
+.contact__per__btn > .main__btn:hover {
+   background: color-mix(in srgb, var(--accent-color), transparent 25%);
 }
