@@ -1,43 +1,123 @@
 /* 지요 */
-@media (min-width: 1400px) {
+@media (max-width: 1399px) {
    .QandA__container li {
       width: 1076px;
    }
-}
-
-@media screen and (min-width: 1200px) {
-   .QandA__container li {
-      max-width: 926px;
+   .testimonials__intro__slider {
+      width: 1116px;
    }
-}
-
-@media (min-width: 992px) {
    .testimonials__sent {
-       width: 80%;
+      width: 892.8px;
+      margin: 0 112px;
    }
-
-   .QandA__content {
-      flex: 0 0 auto;
-      width: 83.33333333%;
+   .QandA__content > div {
+      width: 926px;
    }
 
    .contact__info {
-      flex: 0 0 auto;
-      width: 41.66666667%;
+      width: 451px;
    }
    .contact__per {
-   flex: 0 0 auto;
-   width: 58.33333333%;
+      width: 641px;
+   }
+
+   .footer__bottom__info, .footer__bottom__copyright {
+      width: 1140px;
    }
 }
 
-@media (min-width: 768px) {
-   .contact__per__name, .contact__per__email {
-      flex: 0 0 auto;
-      width: 50%;
+@media screen and (max-width: 1119px) {
+   .QandA__container li {
+      max-width: 926px;
    }
-   .contact__per__subject, .contact__per__message {
-      flex: 0 0 auto;
-      width: 100%;
-  }
+   .testimonials__intro__slider {
+      width: 936px;
+   }
+   .testimonials__sent {
+      width: 748.8px;
+      margin: 0 93.6px;
+   }
+   .QandA__content > div {
+      width: 776px;
+   }
+
+   .contact__info {
+      width: 376px;
+   }
+   .contact__per {
+      width: 536px;
+   }
+
+   .footer__bottom {
+      padding: 0;
+      margin: 0;
+   }
+   .footer__bottom__info, .footer__bottom__copyright {
+      width: 960px;
+   }
+}
+
+@media (max-width: 991px) {
+   /* .testimonials__intro__slider {
+      width: 696px;
+   } */
+   .testimonials__sent {
+      width: 696px;
+      margin: 0;
+   }
+   .QandA__content > div {
+      width: 696px;
+   }
+
+   .contact__content {
+      display: flex;
+      flex-direction: column;
+      padding: 0 12px;
+      margin: 0 76px;
+      gap: 24px;
+   }
+   .contact__info, .contact__per {
+      width: 696px;
+      height: 100%;
+   }
+   .contact__per__btn > .main__btn {
+      margin-bottom: 24px;
+   }
+
+   .footer__bottom {
+      margin: 0;
+      padding: 0;
+   }
+   .footer__bottom__info, .footer__bottom__copyright {
+      width: 720px;
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+   .footer__bottom__corpo {
+      width: 360px;
+   }
+   .footer__bottom__LandS {
+      width: 180px;
+   }
+   .footer__bottom__follow {
+      width: 720px;
+   }
+}
+
+@media (max-width: 767px) {
+   .QandA__content > div {
+      width: 516px;
+   }
+   .contact__info, .contact__per {
+      width: 516px;
+      height: 100%;
+   }
+
+   .footer__bottom__info > div, .footer__bottom__copyright {
+      width: 516px;
+   }
+}
+
+.bi-linkedin::before {
+   content: "\f472";
 }

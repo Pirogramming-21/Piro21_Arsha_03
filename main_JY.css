@@ -25,7 +25,7 @@
    margin-left: auto;
    margin-right: auto;
    padding: 0;
-   width: 95%;
+   width: 1296px;
    height: 100%;
 }
 
@@ -66,7 +66,9 @@
 
 .testimonials__sent {
    display: block;
-   padding: 0 93px 15px 93px;
+   width: 1036.8px;
+   margin: 0 129px;
+   margin-bottom: 15px;
    top: 90px;
 }
 .testimonials__sent > i {
@@ -135,15 +137,20 @@
    text-align: center;
 }
 .QandA__container {
-   margin: 0 76px;
-   padding: 0 12px;
+   /* margin: 0 76px;
+   padding: 0 12px; */
    display: flex;
    justify-content: center;
+   width: 1296px;
 }
 .QandA__content {
    display: flex;
    flex-direction: column;
    align-items: center;
+   padding: 0 12px;
+}
+.QandA__content > div {
+   width: 1076px;
 }
 
 .Contact {
@@ -164,7 +171,7 @@
    padding: 0 12px;
    margin: 0 76px;
    margin-top: 24px;
-   gap: 12px;
+   gap: 24px;
 }
 .contact__content > div {
    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
@@ -174,13 +181,14 @@
 }
 
 .contact__info {
-   width: min(100%, 526px);
+   width: 526px;
    padding-left: 12px;
 }
 .contact__info > div {
    display: flex;
-   align-items: center;
+   align-items: flex-start;
    margin-bottom: 40px;
+   box-sizing: border-box;
 }
 .contact__info > div > i {
    margin-right: 15px;
@@ -216,6 +224,7 @@
 .contact__info .map iframe {
    width: 100%;
    border: 0;
+   height: 270px;
 }
 
 .contact__info > div:hover i {
@@ -224,7 +233,8 @@
 }
 
 .contact__per {
-   padding-left: 12px;
+   padding: 0 12px;
+   width: 746px;
 }
 .contact__per__container {
    height: 100%;
@@ -234,10 +244,16 @@
    margin: -24px -12px;
 }
 
+.contact__per__name, .contact__per__email {
+   width: 50%;
+}
+.contact__per__subject, .contact__per__message {
+   width: 100%;
+}
 .contact__per__container > div {
    display: flex;
    flex-direction: column;
-   padding-left: 12px;
+   padding: 0 12px;
    text-align: left;
    margin-top: 24px;
 }
@@ -245,6 +261,7 @@
    font-size: 16px;
    padding-bottom: 8px;
    color: var(--default-color);
+   margin: 0;
 }
 .contact__per__container > div input, #message__field {
    padding: 10px 15px;
@@ -254,6 +271,13 @@
    color: var(--default-color);
    border-color: color-mix(in srgb, var(--default-color), transparent 80%);
    border-width: 1px;
+   height: 100%;
+}
+.contact__per__container > div input {
+   height: 41px;
+}
+#message__field {
+   height: 230px;
 }
 
 .contact__per__container input:focus, #message__field:focus {

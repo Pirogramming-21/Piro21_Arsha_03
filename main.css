@@ -51,12 +51,12 @@
    ** class 이름이랑 id 바꾸면 안 됨!!! **
 */
 
-.QandA__content ul {
+.QandA__content > div {
    display: flex;
    justify-content: center;
    flex-wrap: wrap;
 }
-.QandA__content li {
+.QandA__content > div {
    display: flex;
    flex-direction: column;
    width: 100%;
@@ -86,6 +86,7 @@ input[id *= "answer"] + label .bi-question-circle > p {
    font-size: 18px;
    color: var(--heading-color);
    margin: 0;
+   text-align: left;
 }
 input[id *= "answer"] + label + div {
    text-align: left;

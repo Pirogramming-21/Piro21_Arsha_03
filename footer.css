@@ -6,7 +6,11 @@
 
 .footer__bottom__info {
    display: flex;
+   width: 1320px;
+   margin-left: auto;
+   margin-right: auto;
 }
+
 .footer__bottom__info > div {
    margin-top: 24px;
    padding: 0 12px;
@@ -35,6 +39,16 @@
    font-weight: bold;
 }
 
+.footer__bottom__corpo {
+   width: 33.33333333%;
+}
+.footer__bottom__LandS {
+   width: 16.66666667%;
+}
+.footer__bottom__follow {
+   width: 33.33333333%;
+}
+
 .footer__bottom__LandS h4, .footer__bottom__follow h4 {
    font-size: 16px;
    font-weight: bold;
@@ -46,18 +60,21 @@
    padding: 10px 0;
    display: flex;
    align-items: center;
+   box-sizing: border-box;
 }
 .footer__bottom__LandS__menu i {
    font-size: 12px;
    padding-right: 3px;
    color: var(--accent-color);
 }
-.footer__bottom__LandS__menu span {
+.footer__bottom__LandS__menu a {
    color: var(--default-color);
    font-size: 14px;
+   text-decoration: none;
+   box-sizing: border-box;
 }
 
-.footer__bottom__LandS__menu span:hover {
+.footer__bottom__LandS__menu a:hover {
    color: var(--accent-color);
    cursor: pointer;
 }
@@ -98,9 +115,9 @@
    margin: 24px 0;
    margin-bottom: 0;
    padding: 25px 0;
-   border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
-   border-width: 1px 0 0;
+   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
    text-align: center;
+   width: 1320px;
 }
 .footer__bottom__copyright__p1 {
    font-size: 14px;
@@ -117,18 +134,6 @@
 }
 .footer__bottom__copyright__p2 span {
    color: var(--accent-color);
-}
-
-@media (min-width: 992px) {
-   .footer__bottom__corpo {
-      width: 33.33333333%;
-   }
-   .footer__bottom__LandS {
-      width: 16.66666667%;
-   }
-   .footer__bottom__follow {
-   width: 33.33333333%;
-   }
 }
 
 .footer {
