@@ -218,23 +218,19 @@ main {
 #portfolio-album {
     height: 1079.34px;
     position: relative;
-    height: auto;
     width: 100%;
     margin: 0 -12px;
-    display: flex;
-    flex-wrap: wrap;
 }
 .portfolio-card{
     width: 33%;
     height: auto;
     margin: 24px 0 0;
     padding: 0 12px;
+    position: absolute;
 }
-
 .portfolio-img{
     display: inline-block;
     overflow: hidden;
-    margin: 0 0 30px;
     position: relative;
     background-color: #fff;
     transition: 0.5s;
@@ -246,4 +242,17 @@ main {
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+.img-column1{
+    position: absolute;
+    left: 0px;
+}
+.img-column2{
+    position: absolute;
+    left: 26vw;
+}
+.img-column3{
+    position: absolute;
+    left: 52vw;
 }
