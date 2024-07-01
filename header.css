@@ -56,6 +56,9 @@ top-header {
     align-items: center;
     transition: 0.3s;
 }
+#top-header-device i.bi.bi-display {
+    color: white;
+}
 #top-header-device li i:hover, #top-header-navigate a i:hover, #top-header-redirect i:hover{
     cursor: pointer;
     color: white;
@@ -132,6 +135,10 @@ top-header {
 @media (max-width: 768px) {
     #top-header-download i {
         display: none;
+    }
+    #top-header-download {
+        margin: 0 0 0 10px;
+        padding: 0 10px;
     }
 }
 #top-header-download span{
