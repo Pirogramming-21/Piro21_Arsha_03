@@ -227,6 +227,7 @@ main {
     margin: 24px 0 0;
     padding: 0 12px;
     position: absolute;
+    z-index:3;
 }
 .portfolio-img{
     display: inline-block;
@@ -280,8 +281,47 @@ main {
     left: 12px;
     right: 12px;
     bottom: -100%;
-    z-index: 3;
+    z-index: 1;
     transition: all ease-in-out 0.5s;
-    background: color-mix(in srgb, var(--background-color), transparent 10%);
+    background: rgba(255, 255, 255, 0.6);
     padding: 15px;
+}
+.portfolio-card:hover .portfolio-info {
+    opacity: 1;
+    bottom: 0;
+    z-index: 4;
+}
+.portfolio-info > h4 {
+    font-size: 18px;
+    font-weight: 600;
+    padding-right: 50px;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    text-align: left;
+    margin: 0 0 8px;
+}
+.portfolio-info > p {
+    color: color-mix(in srgb, #444444, transparent 30%);
+    font-size: 14px;
+    margin-bottom: 0;
+    padding-right: 50px;
+    text-align: left;
+}
+.portfolio-zoom, .portfolio-link{
+    display: inline-block;
+    line-height: 1;
+    position: absolute;
+    top: calc(50% - 14px);
+    transition: .3s;
+}
+.portfolio-zoom:hover, .portfolio-link:hover{
+    color: var(--accent-color);
+}
+.portfolio-zoom{
+    right: 50px;
+    font-size: 24px;
+}
+.portfolio-link{
+    right: 14px;
+    font-size: 28px;
 }
