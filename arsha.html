@@ -10,71 +10,71 @@
    <link rel="stylesheet" href="./footer.css">
    <link rel="stylesheet" href="./mobile.css">
    <link rel="stylesheet" href="./etc.css">
+   <script src="headeranimat.js"></script>
    <title>Arsha</title>
 </head>
 <body>
-<header id="header" class="header d-flex align-items-center fixed-top">
-  <div class="container-fluid container-xl position-relative d-flex align-items-center">
-
-    <a href="index.html" class="logo d-flex align-items-center me-auto">
-      <h1 class="sitename">Arsha</h1>
-    </a>
-
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="#hero" class="active">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#team">Team</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li class="dropdown">
-          <a href="#">
-            <span>Dropdown</span>
-            <i class="bi bi-chevron-down toggle-dropdown"></i>
-          </a>
+   <header id="header" class="header d-flex align-items-center fixed-top">
+      <div class="container-fluid container-xl position-relative d-flex align-items-center">
+        <a href="index.html" class="logo d-flex align-items-center me-auto">
+          <h1 class="sitename">Arsha</h1>
+        </a>
+        <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="#">Dropdown 1</a></li>
+            <li><a href="#hero" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#pricing">Pricing</a></li>
             <li class="dropdown">
               <a href="#">
-                <span>Deep Dropdown</span>
-                <i class="bi bi-chevron-down toggle-dropdown"></i>
+                <span>Dropdown</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                </svg>
               </a>
               <ul>
-                <li><a href="#">Deep Dropdown 1</a></li>
-                <li><a href="#">Deep Dropdown 2</a></li>
-                <li><a href="#">Deep Dropdown 3</a></li>
-                <li><a href="#">Deep Dropdown 4</a></li>
-                <li><a href="#">Deep Dropdown 5</a></li>
+                <li><a href="#">DeepDown1</a></li>
+                <li class="dropdown">
+                  <a href="#">
+                    <span>Deep Dropdown</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                    </svg>
+                  </a>
+                  <ul>
+                    <li><a href="#">Deep Dropdown1</a></li>
+                    <li><a href="#">Deep Dropdown2</a></li>
+                    <li><a href="#">Deep Dropdown3</a></li>
+                    <li><a href="#">Deep Dropdown4</a></li>
+                    <li><a href="#">Deep Dropdown5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">DeepDown2</a></li>
+                <li><a href="#">DeepDown3</a></li>
+                <li><a href="#">DeepDown4</a></li>
               </ul>
             </li>
-            <li><a href="#">Dropdown 2</a></li>
-            <li><a href="#">Dropdown 3</a></li>
-            <li><a href="#">Dropdown 4</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
-        </li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-    </nav>
-
-
-    <a class="main__btn" href="#about">Get Started</a>
-
-  </div>
-</header>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+        <a class="main__btn" href="#about">Get Started</a>
+      </div>
+    </header>
     
    <main>
       <!-- 의진 -->
       <section id="hero" class="hero">
          <div class="content">
          <div class="text-content">
-            <h1>Better Solutions For Your Business</h1>
+            <h1 style="color:#fff">Better Solutions For Your Business</h1>
             <p>We are team of talented designers making websites with Bootstrap</p>
             <div class="buttons">
                <a href="#about" class="main__btn">Get Started</a>
                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video">
-                  <img src="./play-circle.svg" alt="Watch Video">
+                  <img src="./svg폴더/play-circle.svg" alt="Watch Video">
                   <span>Watch Video</span>
                </a>
             </div>
@@ -96,7 +96,6 @@
                <img src="./main2pic/client-7.png" alt="">
                <img src="./main2pic/client-8.png" alt="">
             </div>
-
          </div>
       </section>
       <section id="about" class="about section">
@@ -112,17 +111,17 @@
                         magna aliqua.
                      </p>
                      <li>
-                        <img src="./check2-circle.svg" alt="">
+                        <img src="./svg폴더/check2-circle.svg" alt="">
                         <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
                      </li>
                      <li>
-                        <img src="./check2-circle.svg" alt="">
+                        <img src="./svg폴더/check2-circle.svg" alt="">
                         <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span>
 
 
                      </li>
                      <li>
-                        <img src="./check2-circle.svg" alt="">
+                        <img src="./svg폴더/check2-circle.svg" alt="">
                         <span>Ullamco laboris nisi ut aliquip ex ea commodo</span>
 
                      </li>
@@ -154,33 +153,39 @@
                         <div class="faq-item faq-active">
                            <input type="checkbox" id="answer1">
                            <label for="answer1">
-                                 <i class="bi bi-question-circle"></i>
-                                 <p><span>01</span> Non consectetur a erat nam at lectus urna duis?</p>
-                                 <i class="bi bi-chevron-right"></i>
+                           <div class="faq-question">
+                              <i class="bi bi-question-circle question-icon"></i>
+                              <p><span class="question-number">01</span> Non consectetur a erat nam at lectus urna duis?</p>
+                           </div>
+                           <i class="bi bi-chevron-right chevron-icon"></i>
                            </label>
                            <div class="faq-content">
-                                 <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                              <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
                            </div>
                         </div><!-- End Faq item -->
      
-                        <div class="faq-item">
+                        <div class="faq-item faq-active">
                            <input type="checkbox" id="answer2">
                            <label for="answer2">
+                              <div class="faq-question">
                                  <i class="bi bi-question-circle"></i>
-                                 <p><span>02</span> Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</p>
+                                 <p><span class="question-number">02</span> Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</p>
                                  <i class="bi bi-chevron-right"></i>
+                              </div>
                            </label>
                            <div class="faq-content">
                                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
                            </div>
                         </div><!-- End Faq item -->
      
-                        <div class="faq-item">
+                        <div class="faq-item faq-active">
                            <input type="checkbox" id="answer3">
                            <label for="answer3">
+                              <div class="faq-question">
                                  <i class="bi bi-question-circle"></i>
-                                 <p><span>03</span> Dolor sit amet consectetur adipiscing elit pellentesque?</p>
+                                 <p><span class="question-number">03</span> Dolor sit amet consectetur adipiscing elit pellentesque?</p>
                                  <i class="bi bi-chevron-right"></i>
+                              </div>
                            </label>
                            <div class="faq-content">
                                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>

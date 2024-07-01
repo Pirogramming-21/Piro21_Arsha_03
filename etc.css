@@ -1,3 +1,12 @@
+.align-items-center {
+    align-items: center;
+}
+#header {
+    --background-color: rgba(255, 255, 255, 0);
+    --heading-color: #ffffff;
+    --nav-color: #ffffff;
+}
+
 .hero {
     width: 100%;
     min-height: 80vh;
@@ -56,14 +65,6 @@
     animation: bounce 2s infinite alternate;
     max-width: 100%;
     height:auto;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    color: var(--heading-color);
-    font-family: var(--heading-font);
-}
-.h1, h1 {
-    font-size: calc(1.375rem + 1.5vw);
 }
 
 .hero p {
@@ -323,316 +324,235 @@ p{
         right: 20px;
         cursor: pointer;
         transition: transform 0.3s;
-      }
-      
-      .faq-toggle.open {
+    }      
+.faq-toggle.open {
         transform: rotate(90deg);
-      }
-      
-      .faq-content {
+    }  
+    .faq-content {
         display: none;
         padding-top: 10px;
-      }
-      
-      .faq-content.show {
+    }
+    .faq-content.show {
         display: block;
-      }
-      .responsive-img {
+    }
+    .responsive-img {
         width: 100%;
         height: auto;
     }
     .index-page .header {
-        --background-color: rgba(255, 255, 255, 0);
+        --background-color: rgba(55, 81, 126, 0.9); /* 초기 배경색 설정 */
         --heading-color: #ffffff;
         --nav-color: #ffffff;
+        transition: background-color 0.3s ease; /* 배경색 전환 효과 추가 */
     }
     
+    /* Global Header Styles */
     .header {
-        --background-color: #3d4d6a;
-        --heading-color: #ffffff;
-        --nav-color: #ffffff;
-        color: var(--heading-color);
         background-color: var(--background-color);
-        padding: 15px 0;
-        transition: all 0.5s;
-        z-index: 997;
-        width: 100%;
+        color: #ffffff;
+        padding: 10px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1030;
+    }
+    
+    .header .container-xl {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15px; /* 좌우 패딩 추가 */
     }
     
     .header .logo {
+        color: #ffffff;
+        text-decoration: none;
         display: flex;
         align-items: center;
-        text-decoration: none;
-        color: var(--heading-color);
     }
     
     .header .logo h1 {
-        margin: 0;
-        font-size: 28px;
-        font-weight: bold;
+        display: block;
+        font-size: 1.5em;
+        margin: 0; /* 모든 마진 제거 */
+        font-weight: 600;
+        line-height: 1; /* 줄 높이 조정 */
     }
     
-    .navmenu {
+    .header .navmenu {
         display: flex;
         align-items: center;
     }
     
-    .navmenu ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
+    .header .navmenu ul {
         display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        align-items: center; /* 메뉴 항목들을 세로 중앙 정렬 */
     }
     
-    .navmenu ul li {
+    .header .navmenu ul li {
         position: relative;
-        white-space: nowrap;
+        margin-right: 20px;
     }
     
-    .navmenu ul li a {
-        display: block;
-        padding: 10px 20px;
+    .header .navmenu ul li a {
         color: var(--nav-color);
         text-decoration: none;
+        font-size: 16px;
+        padding: 10px 0; /* 상하 패딩만 적용 */
         transition: color 0.3s;
+        display: flex;
+        align-items: center;
     }
     
-    .navmenu ul li a:hover,
-    .navmenu ul li a.active {
-        color: var(--heading-color);
+    .header .navmenu ul li a:hover {
+        color: #47b2e4;
     }
     
-    .navmenu ul li.dropdown > a {
-        cursor: pointer;
+    /* 드롭다운 메뉴 스타일 */
+    .header .navmenu ul li.dropdown > a svg {
+        margin-left: 5px;
     }
     
-    .navmenu ul li ul {
+    .header .navmenu ul li ul {
         display: none;
         position: absolute;
         top: 100%;
         left: 0;
-        z-index: 99;
-        background-color: var(--background-color);
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    }
-    
-    .navmenu ul li:hover > ul,
-    .navmenu ul li.dropdown:hover > ul {
-        display: block;
-    }
-    
-    .navmenu ul li ul li {
+        background-color: #ffffff;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+        z-index: 999;
         min-width: 180px;
     }
     
-    .navmenu ul li ul li a {
-        padding: 10px 20px;
-        color: var(--nav-color);
+    .header .navmenu ul li:hover > ul {
+        display: block;
     }
     
-    .navmenu ul li ul li a:hover {
-        color: var(--heading-color);
+    .header .navmenu ul li ul li {
+        margin-right: 0;
+        width: 100%;
     }
     
-    .navmenu .mobile-nav-toggle {
-        display: none;
-        font-size: 24px;
-        cursor: pointer;
+    .header .navmenu ul li ul li a {
+        padding: 10px 15px;
+        display: block;
+        color: #37517e; /* 드롭다운 메뉴 텍스트 색상 */
     }
     
-    .btn-getstarted {
-        margin-left: 20px;
-        padding: 10px 20px;
-        background-color: var(--heading-color);
-        color: #fff;
-        border-radius: 5px;
+    /* Deep Dropdown 스타일 */
+    .header .navmenu ul li ul li.dropdown > ul {
+        top: 0;
+        left: 100%;
+    }
+    
+    .header .navmenu ul li ul li.dropdown > a svg {
+        transform: rotate(-90deg);
+    }
+    
+    .header .main__btn {
+        padding: 8px 20px;
+        background-color: #47b2e4;
+        border: none;
+        color: #ffffff;
+        border-radius: 50px;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        transition: 0.3s;
         text-decoration: none;
-        transition: background-color 0.3s;
+        margin-left: 20px; /* 버튼과 메뉴 사이 간격 */
     }
     
-    .btn-getstarted:hover {
-        background-color: var(--nav-color);
+    .header .main__btn:hover {
+        background-color: #209dd8;
     }
-      /* Media Query for Small Screens (max-width: 991px) */
-  @media (max-width: 991px) {
-    .navmenu {
-      display: none;
+    
+    /* 모바일 스타일 */
+    @media (max-width: 991px) {
+        /* 기존 모바일 스타일 유지 */
     }
-    .navmenu .mobile-nav-toggle {
-      display: block;
-    }
-    .navmenu ul {
-      display: flex; /* 메뉴 항목들을 가로로 배치합니다 */
-      list-style: none; /* 기본 목록 스타일 제거 */
-      padding: 0;
-      margin: 0;
-    }
-    .navmenu ul li {
-      margin-right: 20px; /* 각 메뉴 항목 사이의 간격 조정 */
-      position: relative; /* dropdown을 위한 기본 설정 */
-    }
-    .navmenu ul li ul {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      display: none;
-      background-color: #fff;
-      box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
-      z-index: 999;
-    }
-    .navmenu ul li:hover > ul {
-      display: block;
-    }
-    .navmenu ul li ul li {
-      min-width: 200px;
-      white-space: nowrap;
-    }
-    .navmenu ul li ul li a {
-      display: block;
-      padding: 12px 16px;
-      color: #333;
-      text-decoration: none;
-    }
-    .navmenu ul li.dropdown > a:after {
-      content: "\f078"; /* FontAwesome down arrow */
-      font-family: 'Font Awesome 5 Free';
-      font-weight: 900;
-      margin-left: 10px;
-    }
-    .navmenu ul li.dropdown.active > a:after {
-      content: "\f077"; /* FontAwesome up arrow */
-    }
-    .navmenu.active {
-      display: flex !important;
-    }
-  }
-
-/* Global Header Styles */
-.header {
-    background-color: #3d4d6a;
-    color: #ffffff;
-    padding: 15px 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1030;
-  }
-  
-  .header .container-xl {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .header .logo {
-    color: #ffffff;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-  }
-  
-  .header .logo h1 {
-    margin: 0;
-    font-size: 24px;
-  }
-  
-  .header .navmenu ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .header .navmenu ul li {
-    position: relative;
-    margin-right: 20px;
-  }
-  
-  .header .navmenu ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 16px;
-    padding: 10px 15px;
-    transition: color 0.3s;
-  }
-  
-  .header .navmenu ul li a:hover {
-    color: #41a5d3;
-  }
-  
-  .header .main__btn {
-    padding: 10px 28px 12px;
-    background-color: #47b2e4;
-    border: none;
-    color: #ffffff;
-    border-radius: 50px;
-    font-weight: 500;
-    font-size: 15px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    transition: background-color 0.3s, transform 0.3s;
-    cursor: pointer;
-    text-decoration: none;
-  }
-  
-  .header .main__btn:hover {
-    background-color: #41a5d3;
-    transform: translateY(-2px);
-  }
-  
-  .header .mobile-nav-toggle {
-    display: none;
-    color: #ffffff;
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
-  @media (max-width: 991px) {
-    .header .logo {
-      flex: 1;
-    }
-  
-    .header .navmenu ul {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background-color: #3d4d6a;
-      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-      z-index: 999;
-    }
-  
-    .header .navmenu.active ul {
-      display: flex;
-    }
-  
-    .header .navmenu ul li {
-      margin-right: 0;
-      width: 100%;
-    }
-  
-    .header .navmenu ul li a {
-      padding: 15px;
-      display: block;
-    }
-  
-    .header .navmenu ul li.dropdown > a:after {
-      content: "\f078"; /* FontAwesome down arrow */
-      font-family: 'Font Awesome 5 Free';
-      font-weight: 900;
-      margin-left: 10px;
-    }
-  
-    .header .navmenu ul li.dropdown.active > a:after {
-      content: "\f077"; /* FontAwesome up arrow */
-    }
-  
-    .header .navmenu .dropdown ul {
-      position: static;
-      background-color: initial;
-      box-shadow: none;
-    }
-  }
-  
+    .faq-item {
+        margin-bottom: 20px;
+        border-bottom: 1px solid #e9e9e9;
+      }
+      
+      input[id *= "answer"] {
+        display: none;
+      }
+      
+      input[id *= "answer"] + label {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        padding: 10px 0;
+      }
+      
+      .faq-question {
+        display: flex;
+        align-items: center;
+        gap: 20px;  /* 간격 증가 */
+      }
+      
+      .question-icon {
+        color: #47B2E4;
+        font-size: 20px;
+      }
+      
+      .question-number {
+        color: #47B2E4;
+        font-weight: bold;
+        font-size: 18px;
+        min-width: 30px;  /* 숫자 영역의 최소 너비 설정 */
+      }
+      
+      .faq-question p {
+        font-weight: bold;
+        font-size: 18px;
+        color: #375172;
+        margin: 0;
+        transition: color 0.3s ease;
+      }
+      
+      .chevron-icon {
+        transition: transform 0.3s ease;
+        color: #375172;
+      }
+      
+      .faq-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+      }
+      
+      .faq-content p {
+        padding: 10px 0;
+      }
+      
+      /* Hover 효과 */
+      input[id *= "answer"] + label:hover .faq-question p {
+        color: #47B2E4;
+      }
+      
+      input[id *= "answer"] + label:hover .chevron-icon {
+        color: #47B2E4;
+      }
+      
+      /* 체크된 상태 */
+      input[id *= "answer"]:checked + label .chevron-icon {
+        transform: rotate(90deg);
+        color: #47B2E4;
+      }
+      
+      input[id *= "answer"]:checked + label .faq-question p {
+        color: #47B2E4;
+      }
+      
+      input[id *= "answer"]:checked ~ .faq-content {
+        max-height: 500px;
+      }
